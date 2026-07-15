@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TD Feature Arcade — dry run</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#152A4E; --paper:#F2F5FA; --panel:#FFFFFF; --line:#E2E7F0;
+    --blue:#2F6FED; --blue-deep:#1948B3;
+    --teal:#1FA394; --teal-deep:#0E5A50;
+    --gold:#F2A93B; --gold-deep:#8A5A0E;
+    --red:#D2545A; --muted:#6B7280;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:'Inter',sans-serif; line-height:1.55;}
+  .display{font-family:'Space Grotesk',sans-serif;}
+  .wrap{max-width:760px; margin:0 auto; padding:2.5rem 1.5rem 5rem;}
+
+  .marquee{background:var(--ink); color:#EAF0FC; border-radius:18px; padding:1.75rem; position:relative;}
+  .eyebrow{font-size:12px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); font-weight:600; margin:0 0 6px;}
+  .marquee h1{display:flex; align-items:center; gap:.5rem; font-size:30px; margin:0; font-weight:700;}
+  .live-dot{width:9px; height:9px; border-radius:50%; background:var(--teal); display:inline-block; box-shadow:0 0 0 4px rgba(31,163,148,0.25);}
+  .mascot-line{
+    margin-top:1.1rem; background:rgba(255,255,255,0.07); border:1px solid rgba(255,255,255,0.14);
+    border-radius:12px; padding:12px 14px; display:flex; align-items:center; gap:12px;
+  }
+  .mascot-line p{margin:0; font-size:13.5px; color:#D7E0F4;}
+  .mascot-line b{color:#EAF0FC;}
+
+  @keyframes bounce{
+    0%{transform:scale(1) translateY(0);}
+    25%{transform:scale(1.12,0.88) translateY(6px);}
+    50%{transform:scale(0.9,1.14) translateY(-22px);}
+    70%{transform:scale(1.06,0.94) translateY(2px);}
+    85%{transform:scale(0.97,1.04) translateY(-4px);}
+    100%{transform:scale(1) translateY(0);}
+  }
+  @keyframes wagL{
+    0%,100%{transform:rotate(-22deg);} 25%{transform:rotate(-38deg);} 50%{transform:rotate(-10deg);} 75%{transform:rotate(-34deg);}
+  }
+  @keyframes wagR{
+    0%,100%{transform:rotate(22deg);} 25%{transform:rotate(10deg);} 50%{transform:rotate(38deg);} 75%{transform:rotate(14deg);}
+  }
+  @keyframes tailWag{
+    0%,100%{transform:rotate(0deg);} 25%{transform:rotate(18deg);} 50%{transform:rotate(-14deg);} 75%{transform:rotate(16deg);}
+  }
+  #dogSvg.happy{animation:bounce 0.75s ease;}
+  #dogSvg.happy #earL{animation:wagL 0.75s ease;}
+  #dogSvg.happy #earR{animation:wagR 0.75s ease;}
+  #dogSvg.happy #tail{animation:tailWag 0.75s ease 2;}
+
+  section{margin-top:2.25rem; position:relative;}
+  .section-head{display:flex; align-items:baseline; justify-content:space-between; margin-bottom:.9rem;}
+  .section-head h2{font-size:15px; margin:0; color:var(--muted); font-weight:600; letter-spacing:.02em;}
+  .section-head .tag{font-size:12px; color:var(--muted);}
+  .card{background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:1.4rem 1.5rem;}
+
+  .log-row{padding:12px 0; border-top:1px solid var(--line);}
+  .log-row:first-of-type{border-top:none;}
+  .log-top{display:flex; align-items:flex-start; justify-content:space-between; gap:12px;}
+  .log-text{font-size:14px;}
+  .log-text a{color:var(--blue); text-decoration:none; font-weight:500;}
+  .log-desc{font-size:13px; color:var(--muted); margin:6px 0 0; line-height:1.5;}
+  .group-label{
+    font-size:12.5px; font-weight:700; letter-spacing:.02em;
+    padding:7px 14px; border-radius:8px; margin:18px 0 8px; display:block;
+  }
+  .group-label:first-child{margin-top:0;}
+  .group-bug{background:#FBEBEC; color:#8A2C31;}
+  .group-new{background:#E9EFFC; color:var(--blue-deep);}
+  .group-beta{background:#F1E9FB; color:#5B3B99;}
+  .group-released{background:#E6F5F1; color:var(--teal-deep);}
+  .pill{font-size:11px; font-weight:600; padding:3px 9px; border-radius:20px; white-space:nowrap;}
+  .pill.ga{background:#E6F5F1; color:var(--teal-deep);}
+  .pill.beta{background:#E9EFFC; color:var(--blue-deep);}
+  .pill.docs{background:#EFF1F5; color:var(--muted);}
+  .pill.new{background:#FCEFDA; color:var(--gold-deep);}
+  .reactions{display:flex; gap:6px; margin-top:8px;}
+  .react-btn{
+    font-size:12px; border:1px solid var(--line); background:var(--paper); border-radius:20px;
+    padding:3px 10px; cursor:pointer; font-family:'Inter',sans-serif; color:var(--ink);
+  }
+  .react-btn:hover{border-color:var(--blue);}
+  .react-btn.picked{background:#E9EFFC; border-color:var(--blue); font-weight:600;}
+
+  .mystery-card{
+    border:1px dashed var(--line); border-radius:12px; padding:16px; text-align:center;
+    cursor:pointer; background:var(--paper);
+  }
+  .mystery-card.revealed{border-style:solid; text-align:left; cursor:default;}
+
+  .award{
+    background:#FCEFDA; border:1px solid #F2D9A8; border-radius:14px; padding:14px 16px;
+    display:flex; align-items:center; gap:12px;
+  }
+  .award .ic{font-size:22px;}
+  .award b{color:var(--gold-deep);}
+
+  .poll-opt{
+    display:flex; align-items:center; justify-content:space-between; gap:10px;
+    padding:10px 12px; border:1px solid var(--line); border-radius:10px; margin-bottom:8px;
+    cursor:pointer; background:var(--paper); font-size:14px;
+  }
+  .poll-opt.picked{border-color:var(--blue);}
+  .poll-bar{height:6px; border-radius:4px; background:var(--blue); margin-top:6px; transition:width .3s ease;}
+  .poll-track{background:var(--line); border-radius:4px; height:6px; width:100%;}
+  .poll-pct{font-size:12px; color:var(--muted); min-width:34px; text-align:right;}
+
+  .streak-row{display:flex; gap:10px; align-items:center;}
+  .streak-row input{
+    flex:1; padding:10px 12px; border:1px solid var(--line); border-radius:10px; font-size:14px;
+    font-family:'Inter',sans-serif;
+  }
+  .streak-row button{
+    padding:10px 16px; border-radius:10px; border:none; background:var(--blue); color:#fff;
+    font-weight:600; font-size:14px; cursor:pointer;
+  }
+  .streak-result{margin-top:12px; font-size:14px; display:none;}
+  .streak-result.show{display:block;}
+
+  .board-row{display:flex; align-items:center; justify-content:space-between; padding:10px 0; border-top:1px solid var(--line);}
+  .board-row:first-of-type{border-top:none;}
+  .who{display:flex; align-items:center; gap:10px;}
+  .rank{width:22px; font-size:13px; color:var(--muted); font-weight:600;}
+  .name{font-size:14px; font-weight:500;}
+  .tier{font-size:11px; color:var(--muted);}
+  .pts{font-size:14px; font-weight:600; color:var(--blue-deep);}
+  .streak-chip{font-size:11px; color:var(--gold-deep); background:#FCEFDA; padding:2px 8px; border-radius:20px; margin-left:8px;}
+
+  .badge-toggle{cursor:pointer; transition:border-color .15s ease;}
+  .badge-toggle:hover{border-color:var(--blue);}
+  .badge-row{display:grid; grid-template-columns:repeat(5,1fr); gap:10px;}
+  .badge{background:var(--paper); border-radius:12px; padding:12px 8px; text-align:center; border:1px solid var(--line); transition:opacity .2s ease;}
+  .badge.locked{opacity:0.45; filter:grayscale(1);}
+  .badge.earned{animation:badgePop .45s ease;}
+  @keyframes badgePop{
+    0%{transform:scale(1);} 40%{transform:scale(1.15);} 70%{transform:scale(0.95);} 100%{transform:scale(1);}
+  }
+  .badge .ic{font-size:20px;}
+  .badge .nm{font-size:11px; font-weight:600; margin-top:6px;}
+  .badge .ds{font-size:10px; color:var(--muted); margin-top:2px;}
+
+  .note{margin-top:2.5rem; font-size:12px; color:var(--muted); border-top:1px solid var(--line); padding-top:1rem;}
+  .tabs{display:flex; gap:8px; margin-top:1.25rem;}
+  .tabbtn{font-size:13px; font-weight:600; padding:8px 16px; border-radius:20px; border:1px solid var(--line); background:var(--panel); color:var(--muted); cursor:pointer; font-family:'Inter',sans-serif;}
+  .tabbtn.active{background:var(--ink); color:#EAF0FC; border-color:var(--ink);}
+
+  .mascot-tip{display:flex; align-items:center; justify-content:flex-end; gap:8px; margin:-6px 0 12px;}
+  .mascot-bubble{background:var(--panel); border:1px solid var(--line); border-radius:12px 12px 12px 2px; padding:6px 10px; font-size:12px; font-weight:500; color:var(--ink); white-space:nowrap; box-shadow:0 1px 2px rgba(21,42,78,0.06);}
+  @media (max-width:520px){ .badge-row{grid-template-columns:repeat(2,1fr);} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="marquee">
+    <p class="eyebrow">Dry run · based on the Jul 10, 2026 release recap · no quiz version</p>
+    <h1 class="display"><span class="live-dot"></span>TD Feature Arcade</h1>
+    <div class="mascot-line">
+      <svg id="dogSvg" onclick="petDog()" width="84" height="84" viewBox="0 0 200 230" aria-hidden="true" style="flex-shrink:0; cursor:pointer;">
+        <g id="earL" style="transform-origin:60px 90px;">
+          <path d="M80,42 C46,32 18,72 22,122 C25,158 52,178 76,167 C94,159 95,116 88,78 C84,55 84,46 80,42 Z" fill="none" stroke="#EAF0FC" stroke-width="5" stroke-linejoin="round"/>
+        </g>
+        <g id="earR" style="transform-origin:140px 90px;">
+          <path d="M120,42 C154,32 182,72 178,122 C175,158 148,178 124,167 C106,159 105,116 112,78 C116,55 116,46 120,42 Z" fill="none" stroke="#EAF0FC" stroke-width="5" stroke-linejoin="round"/>
+        </g>
+        <ellipse cx="100" cy="105" rx="74" ry="68" fill="#152A4E" stroke="#EAF0FC" stroke-width="5"/>
+        <path d="M70,90 Q82,72 95,90" fill="none" stroke="#EAF0FC" stroke-width="5" stroke-linecap="round"/>
+        <path d="M105,90 Q118,72 130,90" fill="none" stroke="#EAF0FC" stroke-width="5" stroke-linecap="round"/>
+        <ellipse cx="100" cy="119" rx="17" ry="11" fill="#EAF0FC"/>
+        <path d="M76,132 Q90,150 100,135 Q110,150 124,132" fill="none" stroke="#EAF0FC" stroke-width="5" stroke-linecap="round"/>
+        <g id="tail" style="transform-origin:56px 205px;">
+          <path d="M55,205 C30,197 24,173 37,155 C43,168 50,187 63,199 Z" fill="none" stroke="#EAF0FC" stroke-width="5" stroke-linejoin="round"/>
+        </g>
+        <rect x="55" y="168" width="90" height="50" rx="22" fill="none" stroke="#EAF0FC" stroke-width="5"/>
+        <line x1="72" y1="216" x2="72" y2="228" stroke="#EAF0FC" stroke-width="7" stroke-linecap="round"/>
+        <line x1="92" y1="218" x2="92" y2="230" stroke="#EAF0FC" stroke-width="7" stroke-linecap="round"/>
+        <line x1="112" y1="218" x2="112" y2="230" stroke="#EAF0FC" stroke-width="7" stroke-linecap="round"/>
+        <line x1="130" y1="216" x2="130" y2="228" stroke="#EAF0FC" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+      <p id="mascotLineText"><b>Line of the week:</b> "A squirrel ran past while I tested the Pending Activation export. It got away. The export got all 30-plus rows. I call that a win."</p>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button class="tabbtn active" id="tabThisWeek" onclick="showTab('week')">This week</button>
+    <button class="tabbtn" id="tabArchive" onclick="showTab('archive')">Archive</button>
+  </div>
+
+  <div id="viewWeek">
+
+  <section>
+    <div class="section-head">
+      <h2>What shipped this week</h2>
+      <span class="tag">react to anything — no right answer</span>
+    </div>
+    <div class="mascot-tip">
+      <div class="mascot-bubble">tap a reaction!</div>
+      <svg width="60" height="60" viewBox="0 0 200 230" aria-hidden="true">
+        <path d="M80,42 C46,32 18,72 22,122 C25,158 52,178 76,167 C94,159 95,116 88,78 C84,55 84,46 80,42 Z" fill="none" stroke="#152A4E" stroke-width="5" stroke-linejoin="round"/>
+        <path d="M120,42 C154,32 182,72 178,122 C175,158 148,178 124,167 C106,159 105,116 112,78 C116,55 116,46 120,42 Z" fill="none" stroke="#152A4E" stroke-width="5" stroke-linejoin="round"/>
+        <ellipse cx="100" cy="105" rx="74" ry="68" fill="#F2F5FA" stroke="#152A4E" stroke-width="5"/>
+        <path d="M70,90 Q82,72 95,90" fill="none" stroke="#152A4E" stroke-width="5" stroke-linecap="round"/>
+        <path d="M105,90 Q118,72 130,90" fill="none" stroke="#152A4E" stroke-width="5" stroke-linecap="round"/>
+        <ellipse cx="100" cy="119" rx="17" ry="11" fill="#152A4E"/>
+        <path d="M76,132 Q90,150 100,135 Q110,150 124,132" fill="none" stroke="#152A4E" stroke-width="5" stroke-linecap="round"/>
+        <path d="M55,205 C30,197 24,173 37,155 C43,168 50,187 63,199 Z" fill="none" stroke="#152A4E" stroke-width="5" stroke-linejoin="round"/>
+        <rect x="55" y="168" width="90" height="50" rx="22" fill="none" stroke="#152A4E" stroke-width="5"/>
+        <line x1="72" y1="216" x2="72" y2="228" stroke="#152A4E" stroke-width="7" stroke-linecap="round"/>
+        <line x1="92" y1="218" x2="92" y2="230" stroke="#152A4E" stroke-width="7" stroke-linecap="round"/>
+        <line x1="112" y1="218" x2="112" y2="230" stroke="#152A4E" stroke-width="7" stroke-linecap="round"/>
+        <line x1="130" y1="216" x2="130" y2="228" stroke="#152A4E" stroke-width="7" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <div class="card" id="changelog"></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Crowd favorite</h2>
+      <span class="tag">most-reacted item so far</span>
+    </div>
+    <div class="award">
+      <div class="ic">🏆</div>
+      <div><b id="awardName">Proposal preview</b><div style="font-size:12px; color:var(--gold-deep);">leading with <span id="awardCount">0</span> reactions</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Mystery drop</h2>
+      <span class="tag">tap to reveal</span>
+    </div>
+    <div class="mystery-card" id="mysteryCard" onclick="revealMystery()">
+      <div id="mysteryHidden">🎁 Something shipped that didn't make the headline list. Curious?</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Quick poll</h2>
+      <span class="tag">one tap, see live results</span>
+    </div>
+    <div class="card">
+      <p style="font-size:14px; font-weight:500; margin:0 0 12px;">Which feature are you most excited to try with clients?</p>
+      <div id="pollOptions"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Your streak</h2>
+      <span class="tag">first name, no login</span>
+    </div>
+    <div class="card">
+      <div class="streak-row">
+        <input type="text" id="streakName" placeholder="Type your first name">
+        <button onclick="checkStreak()">Check in</button>
+      </div>
+      <div class="streak-result" id="streakResult"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Badge shelf</h2>
+      <span class="tag">earned by showing up, not scoring</span>
+    </div>
+    <div class="card badge-toggle" id="badgeToggle" onclick="openBadges()">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <div style="font-size:26px;">🎖️</div>
+        <div>
+          <div style="font-weight:600; font-size:14px;">Tap to see this week's badges</div>
+          <div style="font-size:12px; color:var(--muted); margin-top:2px;">react, vote, or reveal the mystery card below to start unlocking them</div>
+        </div>
+      </div>
+    </div>
+    <div class="badge-row" id="badgeRow" style="display:none; margin-top:12px;">
+      <div class="badge locked" id="badge-first"><div class="ic">🐾</div><div class="nm">First reaction</div><div class="ds">react to anything</div></div>
+      <div class="badge locked" id="badge-poll"><div class="ic">🗳️</div><div class="nm">Poll voter</div><div class="ds">cast a vote</div></div>
+      <div class="badge locked" id="badge-mystery"><div class="ic">🎁</div><div class="nm">Mystery hunter</div><div class="ds">reveal the card</div></div>
+      <div class="badge locked" id="badge-comeback"><div class="ic">↩️</div><div class="nm">Comeback kid</div><div class="ds">check in your streak</div></div>
+      <div class="badge locked" id="badge-loudest"><div class="ic">📣</div><div class="nm">Loudest fan</div><div class="ds">react 3+ times</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <h2>Leaderboard</h2>
+      <span class="tag">sample data for this demo</span>
+    </div>
+    <div class="card">
+      <div class="board-row"><div class="who"><span class="rank">1</span><div><div class="name">Gabriela</div><div class="tier">Most active</div></div></div><div><span class="pts">18 check-ins</span><span class="streak-chip">on a heater 🔥</span></div></div>
+      <div class="board-row"><div class="who"><span class="rank">2</span><div><div class="name">Luis</div><div class="tier">Regular</div></div></div><div><span class="pts">14 check-ins</span></div></div>
+      <div class="board-row"><div class="who"><span class="rank">3</span><div><div class="name">Patricia</div><div class="tier">Regular</div></div></div><div><span class="pts">11 check-ins</span></div></div>
+      <div class="board-row"><div class="who"><span class="rank">4</span><div><div class="name">Daryna</div><div class="tier">Getting started</div></div></div><div><span class="pts">9 check-ins</span></div></div>
+    </div>
+  </section>
+
+  </div>
+
+  <div id="viewArchive" style="display:none;">
+    <section>
+      <div class="section-head">
+        <h2>Past weeks</h2>
+        <span class="tag">sample — this is what history would look like</span>
+      </div>
+      <div class="card">
+        <div class="log-row"><div class="log-top"><div class="log-text"><b>Jun 29 – Jul 5</b> · Business tax return workflow launched, Client App Trial went live, MSK EventBus released</div><span class="pill ga">3 shipped</span></div></div>
+        <div class="log-row"><div class="log-top"><div class="log-text"><b>Jun 22 – Jun 28</b> · Inbound/model-violations epic released, QBO tech fee sync enabled for all firms</div><span class="pill ga">2 shipped</span></div></div>
+        <div class="log-row"><div class="log-top"><div class="log-text"><b>Jun 15 – Jun 21</b> · No drop that week (holiday freeze)</div><span class="pill docs">skipped</span></div></div>
+      </div>
+      <p style="font-size:12px; color:var(--muted); margin-top:.75rem;">On Lovable, this would read from a Supabase table (one row per week) instead of being hardcoded — same place reactions, poll votes, and streaks would live.</p>
+    </section>
+  </div>
+
+  <div class="note">
+    Prototype for manager review — no-quiz version, content adapted from the real weekly release recap posted in the release channel on Jul 10, 2026. Reactions, poll votes, mystery reveal, and streaks are all live/clickable in this demo but reset on refresh since there's no backend yet — that's what a real data store would solve. Colors approximate TaxDome's palette.
+  </div>
+
+</div>
+
+<script>
+const items = [
+  {cat:'bug', text: 'Client login: email OTP fails after portal access is re-granted', desc: 'Clients whose portal access was removed and then re-granted were getting stuck at the one-time-code login step. Fixed.', link: 'https://taxdome.atlassian.net/browse/TD-90742', reacts: {}},
+  {cat:'bug', text: 'Accounts: Pending Activation list only exported first 30-35 rows', desc: 'Printing or exporting the Pending Activation list was cutting off partway through instead of including everyone. Now exports the full list.', link: 'https://taxdome.atlassian.net/browse/TD-93044', reacts: {}},
+  {cat:'bug', text: 'Juno: documents stuck in "Sending" after a worker failure', desc: 'Some documents sent through Juno could get stuck showing "Sending" forever if a background job failed. Fixed.', link: 'https://taxdome.atlassian.net/browse/TD-91430', reacts: {}},
+  {cat:'bug', text: 'Workflow: pipeline cloning duplicated automation templates', desc: 'Cloning a pipeline was creating duplicate copies of linked automation templates instead of reusing the original. Now reuses them correctly.', link: 'https://taxdome.atlassian.net/browse/TD-93813', reacts: {}},
+  {cat:'new', text: 'Auto-move now runs for Completed jobs', desc: 'Auto-move used to only apply to active jobs — now it also runs for jobs marked Completed.', link: 'https://taxdome.atlassian.net/browse/TD-91527', reacts: {'👍':3,'👀':1}},
+  {cat:'new', text: 'Faster /app/clients page load', desc: 'The Clients page should load noticeably faster now.', link: 'https://taxdome.atlassian.net/browse/TD-91052', reacts: {'🔥':2,'👍':3}},
+  {cat:'beta', text: 'Scheduled bulk client-chat messages', desc: 'You can now schedule a bulk client-chat message to go out later instead of only sending it immediately. Limited rollout.', link: 'https://taxdome.atlassian.net/browse/TD-90248', reacts: {'🔥':5,'👀':2}},
+  {cat:'beta', text: 'CRM import improvements — preview & results screens', desc: 'CRM import now shows a preview and a results screen, so you can see what\'s about to happen before confirming.', link: 'https://taxdome.atlassian.net/browse/TD-90780', reacts: {'👍':2}},
+  {cat:'beta', text: 'CRM import improvements — precise import errors & warnings', desc: 'Import errors and warnings are now specific instead of generic, so it\'s easier to tell what actually needs fixing.', link: 'https://taxdome.atlassian.net/browse/TD-79480', reacts: {'👍':1}},
+  {cat:'released', text: 'Manage & charge payment methods on behalf of the client', desc: 'Firms can now manage and charge a client\'s saved payment method directly, without needing the client to do it themselves.', link: 'https://taxdome.atlassian.net/browse/TD-58278', reacts: {'🔥':14,'👍':6,'👀':3}}
+];
+
+const catOrder = ['bug','new','beta','released'];
+const catLabel = {bug:'🐛 Bug fixes of the week', new:'✨ New', beta:'🧪 New features in beta', released:'🚀 Features released for all'};
+const catColor = {bug:'#D2545A', new:'#2F6FED', beta:'#8B5FBF', released:'#1FA394'};
+
+function renderChangelog(){
+  const wrap = document.getElementById('changelog');
+  wrap.innerHTML = '';
+  catOrder.forEach(cat => {
+    const groupItems = items.filter(it => it.cat === cat);
+    if(!groupItems.length) return;
+    const header = document.createElement('div');
+    header.className = `group-label group-${cat}`;
+    header.textContent = catLabel[cat];
+    wrap.appendChild(header);
+    groupItems.forEach(it => {
+      const idx = items.indexOf(it);
+      const row = document.createElement('div');
+      row.className = 'log-row';
+      row.style.borderLeft = `3px solid ${catColor[cat]}`;
+      row.style.paddingLeft = '10px';
+      const linkHtml = it.link ? ` — <a href="${it.link}" target="_blank">↗</a>` : '';
+      row.innerHTML = `
+        <div class="log-top">
+          <div class="log-text">${it.text}${linkHtml}</div>
+        </div>
+        <p class="log-desc">${it.desc}</p>
+        <div class="reactions" data-idx="${idx}"></div>
+      `;
+      wrap.appendChild(row);
+      const reactWrap = row.querySelector('.reactions');
+      ['🔥','👍','👀'].forEach(emoji => {
+        const btn = document.createElement('button');
+        btn.className = 'react-btn';
+        btn.textContent = `${emoji} ${it.reacts[emoji] || 0}`;
+        btn.onclick = () => react(idx, emoji, btn);
+        reactWrap.appendChild(btn);
+      });
+    });
+  });
+  updateAward();
+}
+
+let totalReactionsGiven = 0;
+
+function openBadges(){
+  const row = document.getElementById('badgeRow');
+  const toggle = document.getElementById('badgeToggle');
+  row.style.display = 'grid';
+  toggle.innerHTML = `<div style="display:flex; align-items:center; gap:12px;"><div style="font-size:26px;">🎖️</div><div><div style="font-weight:600; font-size:14px;">Your badges</div><div style="font-size:12px; color:var(--muted); margin-top:2px;">greyed out ones are still up for grabs this week</div></div></div>`;
+  toggle.onclick = null;
+  toggle.style.cursor = 'default';
+}
+
+function unlockBadge(id){
+  const el = document.getElementById(id);
+  if(!el || !el.classList.contains('locked')) return;
+  el.classList.remove('locked');
+  el.classList.add('earned');
+}
+
+function react(idx, emoji, btn){
+  items[idx].reacts[emoji] = (items[idx].reacts[emoji] || 0) + 1;
+  btn.textContent = `${emoji} ${items[idx].reacts[emoji]}`;
+  btn.classList.add('picked');
+  updateAward();
+  totalReactionsGiven++;
+  unlockBadge('badge-first');
+  if(totalReactionsGiven >= 3) unlockBadge('badge-loudest');
+}
+
+function totalReacts(it){
+  return Object.values(it.reacts).reduce((a,b) => a+b, 0);
+}
+
+function updateAward(){
+  let top = items[0];
+  items.forEach(it => { if(totalReacts(it) > totalReacts(top)) top = it; });
+  document.getElementById('awardName').textContent = top.text.split(':')[0];
+  document.getElementById('awardCount').textContent = totalReacts(top);
+}
+
+function revealMystery(){
+  const card = document.getElementById('mysteryCard');
+  card.classList.add('revealed');
+  document.getElementById('mysteryHidden').innerHTML = 'The real Slack post this was based on got 11 🚀 and 1 🙏 this week. Think this page can beat that?';
+  card.onclick = null;
+  unlockBadge('badge-mystery');
+}
+
+const pollData = [
+  {label: 'Scheduled bulk client-chat messages', votes: 9},
+  {label: 'Manage & charge payment methods for clients', votes: 6},
+  {label: 'CRM import preview & results screens', votes: 4}
+];
+let voted = false;
+
+function renderPoll(){
+  const wrap = document.getElementById('pollOptions');
+  wrap.innerHTML = '';
+  const total = pollData.reduce((a,b) => a+b.votes, 0);
+  pollData.forEach((opt, idx) => {
+    const pct = total ? Math.round((opt.votes/total)*100) : 0;
+    const row = document.createElement('div');
+    row.className = 'poll-opt';
+    row.innerHTML = `
+      <div style="flex:1;">
+        <div style="display:flex; justify-content:space-between;">
+          <span>${opt.label}</span><span class="poll-pct">${pct}%</span>
+        </div>
+        <div class="poll-track"><div class="poll-bar" style="width:${pct}%;"></div></div>
+      </div>
+    `;
+    row.onclick = () => {
+      if(voted) return;
+      pollData[idx].votes++;
+      voted = true;
+      renderPoll();
+      unlockBadge('badge-poll');
+    };
+    wrap.appendChild(row);
+  });
+}
+
+function checkStreak(){
+  const name = document.getElementById('streakName').value.trim();
+  const result = document.getElementById('streakResult');
+  if(!name){ result.textContent = 'Type your first name first.'; result.classList.add('show'); return; }
+  result.innerHTML = `Nice to see you, <b>${name}</b> — sample streak: <b>3 weeks running</b> 🔥 (this demo doesn't remember between refreshes; the real version would).`;
+  result.classList.add('show');
+  unlockBadge('badge-comeback');
+}
+
+renderChangelog();
+renderPoll();
+
+const mascotLines = [
+  '"A squirrel ran past while I tested the Pending Activation export. It got away. The export got all 30-plus rows. I call that a win."',
+  '"Fixed a bug where documents got stuck saying \'Sending\' forever — turns out even I don\'t wait that patiently for a treat."',
+  '"CRM import now warns you before things go wrong. Unlike me, before I dig a hole in the yard."',
+  '"Clients can get charged automatically for saved payment methods now. I would also like to be charged automatically in treats."'
+];
+let lineIdx = 0;
+
+function petDog(){
+  const dog = document.getElementById('dogSvg');
+  dog.classList.remove('happy');
+  void dog.offsetWidth;
+  dog.classList.add('happy');
+  lineIdx = (lineIdx + 1) % mascotLines.length;
+  document.getElementById('mascotLineText').innerHTML = `<b>Line of the week:</b> ${mascotLines[lineIdx]}`;
+}
+
+function showTab(which){
+  const week = which === 'week';
+  document.getElementById('viewWeek').style.display = week ? '' : 'none';
+  document.getElementById('viewArchive').style.display = week ? 'none' : '';
+  document.getElementById('tabThisWeek').classList.toggle('active', week);
+  document.getElementById('tabArchive').classList.toggle('active', !week);
+}
+</script>
+</body>
+</html>
