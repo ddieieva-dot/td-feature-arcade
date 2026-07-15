@@ -1,3 +1,4 @@
+<!-- TD Feature Arcade — build v1 (2026-07-15): real Supabase reactions/poll/checkins, demo links in changelog + archive, arrow+dog fixed -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +86,7 @@
     padding:3px 10px; cursor:pointer; font-family:'Inter',sans-serif; color:var(--ink);
   }
   .react-btn:hover{border-color:var(--blue);}
-  .react-btn.picked{background:#E9EFFC; border-color:var(--blue); font-weight:600;}
+  .react-btn.picked{background:#E9EFFC; border-color:var(--blue); font-weight:600; cursor:default;}
 
   .mystery-card{
     border:1px dashed var(--line); border-radius:12px; padding:16px; text-align:center;
@@ -459,11 +460,13 @@ function unlockBadge(id){
 }
 
 function react(idx, emoji, btn){
+  if(btn.classList.contains('picked')) return; // already reacted with this one — no double-counting
   if(!items[idx].liveReacts) items[idx].liveReacts = {};
   const current = (items[idx].liveReacts[emoji] !== undefined) ? items[idx].liveReacts[emoji] : (items[idx].reacts[emoji] || 0);
   items[idx].liveReacts[emoji] = current + 1;
   btn.textContent = `${emoji} ${items[idx].liveReacts[emoji]}`;
   btn.classList.add('picked');
+  btn.disabled = true;
   updateAward();
   totalReactionsGiven++;
   unlockBadge('badge-first');
