@@ -93,9 +93,9 @@
     }
   ],
   "poll": [
-    {"label": "Automatic pricing-update emails for special-rate firms", "votes": 6},
-    {"label": "Drag-and-drop back in the Desktop Upload Window", "votes": 9},
-    {"label": "Assigning jobs by role instead of by name", "votes": 4}
+    {"label": "Automatic pricing-update emails for special-rate firms", "votes": 0},
+    {"label": "Drag-and-drop back in the Desktop Upload Window", "votes": 0},
+    {"label": "Assigning jobs by role instead of by name", "votes": 0}
   ],
   "mystery": "Bonus fix that didn't make the headline list: a CRM import counter was quietly under-reporting how many contacts didn't get linked to an account \u2014 off by exactly one skipped row. Tiny, but now it counts right."
 }
