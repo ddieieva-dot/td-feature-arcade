@@ -1,0 +1,233 @@
+{
+  "weekLabel": "Jul 6–10, 2026",
+  "mascotLines": [
+    "I used to just fetch the ball. Now apparently I can fetch it AND put it away for you \u2014 kind of like the new feature where firms manage and charge a client\u2019s saved payment method themselves. I\u2019m very good at chores now.",
+    "A squirrel darted past while I was testing the Pending Activation print job. It got away, but the print job didn\u2019t \u2014 every row finally prints now, past row 35 and everything. I have priorities, and I stand by them.",
+    "I finally learned to bury multiple treats and remember exactly where all of them are. Turns out that\u2019s basically what the new scheduled bulk client-chat messages do \u2014 set them all up once, and they go out right on time without anyone lifting a paw.",
+    "Long chat threads used to slow everything down, like dragging a leash through mud. Now big threads send fast \u2014 no mud, no drag, just zoomies."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Manage and charge payment methods on behalf of the client",
+      "desc": "Firms can now add, remove, and see the expiration status of a client's saved payment methods \u2014 and charge invoices using them directly, instead of relying on the client to keep a valid method on file.",
+      "link": "https://taxdome.atlassian.net/browse/TD-58278",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Document timestamps in the Client portal",
+      "desc": "Clients now see the exact time a document was uploaded today (and just the date for older ones), making it easier to spot the most recent file after a rename.",
+      "link": "https://taxdome.atlassian.net/browse/TD-53177",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Fix auto-move for Completed jobs",
+      "desc": "Before, jobs marked \u201cCompleted\u201d before their final pipeline stage would get stuck there. Now they keep auto-advancing through the remaining internal stages like they should.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91527",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Update Job Status automation card \u2014 design polish",
+      "desc": "The \u201cUpdate Job Status\u201d automation card just got a visual refresh to match the current design system. No functional changes.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93539",
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Automatic invoicing on subscription purchases and upgrades",
+      "desc": "When a firm buys seats, adds seats, or upgrades their plan, TaxDome now automatically calculates the price and generates the invoice \u2014 no manual billing steps needed on our end.",
+      "link": "https://taxdome.atlassian.net/browse/TD-80299",
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Scheduled bulk client-chat messages",
+      "desc": "Firms can schedule one message to go out to many clients at once, manage everything from a new \u201cScheduled\u201d section, and send now, reschedule, delete, or reassign in bulk. Clients are only notified when the message actually goes out, not when it's scheduled.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90248",
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "CRM import improvements: preview and results screens",
+      "desc": "Contact and account imports now show a preview screen before you commit, plus a results screen showing what was created, updated, or skipped \u2014 with a downloadable CSV of any skipped rows.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90780",
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "CRM import improvements: clearer errors and warnings",
+      "desc": "Import now explains the real reason a row was skipped (like a bad email or an unrecognized team member) instead of a generic error, and auto-fixes what it safely can rather than dropping the row.",
+      "link": "https://taxdome.atlassian.net/browse/TD-79480",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Stripe reconciliation was breaking payments on healthy accounts",
+      "desc": "A reconciliation bug was incorrectly flagging healthy connected Stripe accounts as unhealthy, causing payments to fail. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93184",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Prepayments stayed enabled after disabling a payment provider",
+      "desc": "Turning off a payment provider didn't turn off the prepayments option tied to it, which could confuse clients trying to pay. Now it does.",
+      "link": "https://taxdome.atlassian.net/browse/TD-71448",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recurring invoices could double-activate under concurrent sign requests",
+      "desc": "Signing a recurring invoice twice in quick succession could cause both requests to activate it. Fixed so only one goes through.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93489",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recurring invoice templates crashed on an invalid assignee type",
+      "desc": "Creating a recurring invoice template with certain assignee setups caused a crash instead of a clear error message. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92339",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "QuickBooks Online: \u201cDeposit To\u201d account settings",
+      "desc": "Fixed how online vs. offline payment deposit accounts are configured for the QBO integration.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93663",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Documents stuck in \u201cSending\u201d status after a delivery failure",
+      "desc": "If the background job delivering a document failed, the document could get permanently stuck showing \u201cSending.\u201d Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91430",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Uploading a document to a job silently failed in some cases",
+      "desc": "Switching between jobs while uploading could cause a document to silently fail to attach. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92489",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Download was enabled on collapsed document folders",
+      "desc": "Trying to download a folder without expanding it first threw a confusing backend error. Now it's handled properly.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91272",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Images disappeared from organizer templates",
+      "desc": "Images embedded via the template editor could vanish due to a cleanup bug. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-89693",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Client login failed after portal access was re-granted",
+      "desc": "Clients who were re-granted portal access after losing it could get stuck with a false \u201cincorrect code\u201d error during email login. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90742",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Password updates were failing on all clusters",
+      "desc": "A backend error was blocking password changes entirely. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92948",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Firm members without \u201cAssign team members\u201d permission couldn't create client accounts",
+      "desc": "An overly strict permission check was blocking account creation for team members who should have been allowed. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92975",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Client account creation showed a false \u201cname already taken\u201d error",
+      "desc": "Adding a contact during new client-account creation could trigger a false duplicate-name error, even though the account was actually created successfully. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92448",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Client-user batch updates could crash on removal",
+      "desc": "Removing a stale or missing link during a batch update of client users could crash instead of completing gracefully. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93295",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Account role updates could fail under concurrent requests",
+      "desc": "Updating firm member account roles at the same time as another change could hit a database error. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-87540",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Client chat messages were slow to send on large threads",
+      "desc": "Sending a message in a long-running chat thread was re-processing the entire thread every time, causing multi-second delays. It's much faster now.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92668",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Cloning a pipeline duplicated automation templates instead of reusing them",
+      "desc": "Cloning a pipeline was creating brand-new copies of every linked automation template instead of pointing back to the originals. Fixed (this was a regression).",
+      "link": "https://taxdome.atlassian.net/browse/TD-93813",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Bulk-moving jobs between stages could throw an error",
+      "desc": "Certain bulk stage-move actions hit an unexpected error when parameters were missing. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91301",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recurring job creation failed when the automation's assignee was deactivated",
+      "desc": "If the team member assigned by a \u201ccreate task\u201d automation was later deactivated, new recurring jobs stopped generating. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92998",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Printing the Pending Activation accounts list only showed partial results",
+      "desc": "The print view was capping out around 30\u201335 rows instead of showing the full list. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93044",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Proposals edit page was slow to load",
+      "desc": "Performance fix for the proposal editing page \u2014 it loads faster now.",
+      "link": "https://taxdome.atlassian.net/browse/TD-80703",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Mobile app: snack bar buttons disappeared",
+      "desc": "Action buttons in the mobile app's snack-bar notifications had stopped appearing. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-3245",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Desktop app: shell extension not registering after upgrade",
+      "desc": "After a major desktop app upgrade, the Windows shell extension wasn't re-registering properly, which broke Explorer integration. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-2971",
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Charging clients' saved payment methods for them", "votes": 6},
+    {"label": "Scheduling bulk client-chat messages", "votes": 9},
+    {"label": "Faster CRM imports with a preview screen", "votes": 4}
+  ]
+}
