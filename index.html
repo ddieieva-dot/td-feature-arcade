@@ -417,9 +417,10 @@ function renderChangelog(){
       row.style.borderLeft = `3px solid ${catColor[cat]}`;
       row.style.paddingLeft = '10px';
       const linkHtml = it.link ? ` — <a href="${it.link}" target="_blank">↗</a>` : '';
+      const demoHtml = it.demo ? ` <a href="${it.demo}" target="_blank" style="color:var(--blue); text-decoration:none; font-size:12px; font-weight:600;">🎥 demo</a>` : '';
       row.innerHTML = `
         <div class="log-top">
-          <div class="log-text">${it.text}${linkHtml}</div>
+          <div class="log-text">${it.text}${linkHtml}${demoHtml}</div>
         </div>
         <p class="log-desc">${it.desc}</p>
         <div class="reactions" data-idx="${idx}"></div>
@@ -641,7 +642,7 @@ function renderArchive(){
             const wd = await r.json();
             detail.innerHTML = wd.items.map(it => `
               <div style="border-left:3px solid ${catColor[it.cat] || '#ccc'}; padding-left:10px; margin:8px 0;">
-                <div style="font-size:13px; font-weight:500;">${catLabel[it.cat] ? catLabel[it.cat].split(' ')[0] : ''} ${it.text}${it.link ? ` — <a href="${it.link}" target="_blank">↗</a>` : ''}</div>
+                <div style="font-size:13px; font-weight:500;">${catLabel[it.cat] ? catLabel[it.cat].split(' ')[0] : ''} ${it.text}${it.link ? ` — <a href="${it.link}" target="_blank">↗</a>` : ''}${it.demo ? ` <a href="${it.demo}" target="_blank" style="color:var(--blue); font-size:11px; font-weight:600;">🎥 demo</a>` : ''}</div>
                 <div style="font-size:12px; color:var(--muted); margin-top:2px;">${it.desc}</div>
               </div>
             `).join('');
