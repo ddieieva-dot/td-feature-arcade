@@ -1,0 +1,19 @@
+{
+  "current": "data-2026-07-06.json",
+  "archive": [
+    {
+      "id": "2026-06-29",
+      "file": "data-2026-06-29.json",
+      "range": "Jun 29 \u2013 Jul 5",
+      "summary": "Business tax return workflow launched, Client App Trial went live, MSK EventBus released",
+      "tag": "3 shipped"
+    },
+    {
+      "id": "2026-06-15",
+      "file": null,
+      "range": "Jun 15 \u2013 Jun 21",
+      "summary": "No drop that week (holiday freeze)",
+      "tag": "skipped"
+    }
+  ]
+}

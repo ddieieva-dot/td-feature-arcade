@@ -310,7 +310,7 @@
         <span class="tag">sample — this is what history would look like</span>
       </div>
       <div class="card" id="archiveList"></div>
-      <p style="font-size:12px; color:var(--muted); margin-top:.75rem;">This section is just edited directly in the page each week — no database needed, just updating the text and committing the change.</p>
+      <p style="font-size:12px; color:var(--muted); margin-top:.75rem;">Click a week to expand its full changelog. Each week is its own file, added when that week's digest gets archived.</p>
     </section>
   </div>
 
@@ -324,7 +324,6 @@
 let items = [];
 let mascotLines = [];
 let pollData = [];
-let archiveData = [];
 
 const catOrder = ['released','new','beta','gradual','bug'];
 const catLabel = {released:'🚀 Features released for all', new:'✨ New', beta:'🧪 New features in beta', gradual:'🌤️ New features in gradual release', bug:'🐛 Bug fixes of the week'};
@@ -453,21 +452,24 @@ function checkStreak(){
   unlockBadge('badge-comeback');
 }
 
+let weeksIndex = null;
+
 async function loadData(){
   try{
-    const res = await fetch('data.json');
+    const idxRes = await fetch('weeks-index.json');
+    weeksIndex = await idxRes.json();
+    const res = await fetch(weeksIndex.current);
     const data = await res.json();
     items = data.items;
     mascotLines = data.mascotLines;
     pollData = data.poll;
-    archiveData = data.archive;
     document.querySelector('.eyebrow').textContent = `Week of ${data.weekLabel}`;
     document.getElementById('mascotLineText').innerHTML = `<b>Line of the week:</b> "${mascotLines[0]}"`;
     renderChangelog();
     renderPoll();
     renderArchive();
   }catch(err){
-    document.getElementById('changelog').innerHTML = '<p style="font-size:13px; color:var(--muted);">Could not load this week\'s data (data.json). Check the file is in the same folder as index.html.</p>';
+    document.getElementById('changelog').innerHTML = '<p style="font-size:13px; color:var(--muted);">Could not load this week\'s data. Check weeks-index.json and the current week\'s file are both in the same folder as index.html.</p>';
     console.error(err);
   }
 }
@@ -475,10 +477,41 @@ async function loadData(){
 function renderArchive(){
   const wrap = document.getElementById('archiveList');
   wrap.innerHTML = '';
-  archiveData.forEach(week => {
+  weeksIndex.archive.forEach(week => {
     const row = document.createElement('div');
-    row.className = 'log-row';
-    row.innerHTML = `<div class="log-top"><div class="log-text"><b>${week.range}</b> · ${week.summary}</div><span class="pill" style="background:#EFF1F5; color:var(--muted);">${week.tag}</span></div>`;
+    row.className = 'log-row archive-row';
+    row.innerHTML = `
+      <div class="log-top" style="cursor:${week.file ? 'pointer' : 'default'};">
+        <div class="log-text"><b>${week.range}</b> · ${week.summary}</div>
+        <span class="pill" style="background:#EFF1F5; color:var(--muted);">${week.tag}</span>
+      </div>
+      <div class="archive-detail" style="display:none; margin-top:10px;"></div>
+    `;
+    if(week.file){
+      const top = row.querySelector('.log-top');
+      const detail = row.querySelector('.archive-detail');
+      let loaded = false;
+      top.onclick = async () => {
+        const open = detail.style.display === 'block';
+        detail.style.display = open ? 'none' : 'block';
+        if(!open && !loaded){
+          detail.innerHTML = '<p style="font-size:12px; color:var(--muted);">Loading…</p>';
+          try{
+            const r = await fetch(week.file);
+            const wd = await r.json();
+            detail.innerHTML = wd.items.map(it => `
+              <div style="border-left:3px solid ${catColor[it.cat] || '#ccc'}; padding-left:10px; margin:8px 0;">
+                <div style="font-size:13px; font-weight:500;">${catLabel[it.cat] ? catLabel[it.cat].split(' ')[0] : ''} ${it.text}${it.link ? ` — <a href="${it.link}" target="_blank">↗</a>` : ''}</div>
+                <div style="font-size:12px; color:var(--muted); margin-top:2px;">${it.desc}</div>
+              </div>
+            `).join('');
+            loaded = true;
+          }catch(e){
+            detail.innerHTML = '<p style="font-size:12px; color:var(--muted);">Could not load this week\'s detail file.</p>';
+          }
+        }
+      };
+    }
     wrap.appendChild(row);
   });
 }
