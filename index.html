@@ -133,7 +133,7 @@
 
   .badge-toggle{cursor:pointer; transition:border-color .15s ease;}
   .badge-toggle:hover{border-color:var(--blue);}
-  .badge-row{display:grid; grid-template-columns:repeat(5,1fr); gap:10px;}
+  .badge-row{display:grid; grid-template-columns:repeat(4,1fr); gap:10px;}
   .badge{background:var(--paper); border-radius:12px; padding:12px 8px; text-align:center; border:1px solid var(--line); transition:opacity .2s ease;}
   .badge.locked{opacity:0.45; filter:grayscale(1);}
   .badge.earned{animation:badgePop .45s ease;}
@@ -161,6 +161,13 @@
     <p class="eyebrow">Dry run · based on the Jul 10, 2026 release recap · no quiz version</p>
     <h1 class="display"><span class="live-dot"></span>TD Feature Arcade</h1>
     <div class="mascot-line">
+      <div style="display:flex; flex-direction:column; align-items:center; margin-right:2px;">
+        <span style="font-size:11px; color:var(--gold); font-weight:700; white-space:nowrap; transform:rotate(-6deg); font-family:'Space Grotesk',sans-serif;">click me!</span>
+        <svg width="40" height="34" viewBox="0 0 40 34" aria-hidden="true">
+          <path d="M6,4 C 8,16 16,26 30,24" stroke="#F2A93B" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M22,19 L31,24.5 L24,31" stroke="#F2A93B" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
       <svg id="dogSvg" onclick="petDog()" width="84" height="84" viewBox="0 0 200 230" aria-hidden="true" style="flex-shrink:0; cursor:pointer;">
         <g id="earL" style="transform-origin:60px 90px;">
           <path d="M80,42 C46,32 18,72 22,122 C25,158 52,178 76,167 C94,159 95,116 88,78 C84,55 84,46 80,42 Z" fill="none" stroke="#EAF0FC" stroke-width="5" stroke-linejoin="round"/>
@@ -182,7 +189,7 @@
         <line x1="112" y1="218" x2="112" y2="230" stroke="#EAF0FC" stroke-width="7" stroke-linecap="round"/>
         <line x1="130" y1="216" x2="130" y2="228" stroke="#EAF0FC" stroke-width="7" stroke-linecap="round"/>
       </svg>
-      <p id="mascotLineText"><b>Line of the week:</b> "A squirrel ran past while I tested the Pending Activation export. It got away. The export got all 30-plus rows. I call that a win."</p>
+      <p id="mascotLineText"><b>Line of the week:</b> "Squirrel ran by. Export still caught all 30+ rows. Priorities."</p>
     </div>
   </div>
 
@@ -253,20 +260,6 @@
 
   <section>
     <div class="section-head">
-      <h2>Your streak</h2>
-      <span class="tag">first name, no login</span>
-    </div>
-    <div class="card">
-      <div class="streak-row">
-        <input type="text" id="streakName" placeholder="Type your first name">
-        <button onclick="checkStreak()">Check in</button>
-      </div>
-      <div class="streak-result" id="streakResult"></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head">
       <h2>Badge shelf</h2>
       <span class="tag">earned by showing up, not scoring</span>
     </div>
@@ -283,21 +276,7 @@
       <div class="badge locked" id="badge-first"><div class="ic">🐾</div><div class="nm">First reaction</div><div class="ds">react to anything</div></div>
       <div class="badge locked" id="badge-poll"><div class="ic">🗳️</div><div class="nm">Poll voter</div><div class="ds">cast a vote</div></div>
       <div class="badge locked" id="badge-mystery"><div class="ic">🎁</div><div class="nm">Mystery hunter</div><div class="ds">reveal the card</div></div>
-      <div class="badge locked" id="badge-comeback"><div class="ic">↩️</div><div class="nm">Comeback kid</div><div class="ds">check in your streak</div></div>
       <div class="badge locked" id="badge-loudest"><div class="ic">📣</div><div class="nm">Loudest fan</div><div class="ds">react 3+ times</div></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="section-head">
-      <h2>Leaderboard</h2>
-      <span class="tag">sample data for this demo</span>
-    </div>
-    <div class="card">
-      <div class="board-row"><div class="who"><span class="rank">1</span><div><div class="name">Gabriela</div><div class="tier">Most active</div></div></div><div><span class="pts">18 check-ins</span><span class="streak-chip">on a heater 🔥</span></div></div>
-      <div class="board-row"><div class="who"><span class="rank">2</span><div><div class="name">Luis</div><div class="tier">Regular</div></div></div><div><span class="pts">14 check-ins</span></div></div>
-      <div class="board-row"><div class="who"><span class="rank">3</span><div><div class="name">Patricia</div><div class="tier">Regular</div></div></div><div><span class="pts">11 check-ins</span></div></div>
-      <div class="board-row"><div class="who"><span class="rank">4</span><div><div class="name">Daryna</div><div class="tier">Getting started</div></div></div><div><span class="pts">9 check-ins</span></div></div>
     </div>
   </section>
 
@@ -314,8 +293,6 @@
     </section>
   </div>
 
-  <div class="note">
-    Prototype for manager review — no-quiz version, content adapted from the real weekly release recap posted in the release channel on Jul 10, 2026. Reactions, poll votes, mystery reveal, and streaks are all live/clickable in this demo but reset on refresh since there's no backend yet — that's what a real data store would solve. Colors approximate TaxDome's palette.
   </div>
 
 </div>
@@ -324,6 +301,7 @@
 let items = [];
 let mascotLines = [];
 let pollData = [];
+let mysteryText = '';
 
 const catOrder = ['released','new','beta','gradual','bug'];
 const catLabel = {released:'🚀 Features released for all', new:'✨ New', beta:'🧪 New features in beta', gradual:'🌤️ New features in gradual release', bug:'🐛 Bug fixes of the week'};
@@ -409,7 +387,7 @@ function updateAward(){
 function revealMystery(){
   const card = document.getElementById('mysteryCard');
   card.classList.add('revealed');
-  document.getElementById('mysteryHidden').innerHTML = 'The real Slack post this was based on got 11 🚀 and 1 🙏 this week. Think this page can beat that?';
+  document.getElementById('mysteryHidden').innerHTML = mysteryText || 'Nothing extra to reveal this week — check back next time!';
   card.onclick = null;
   unlockBadge('badge-mystery');
 }
@@ -443,15 +421,6 @@ function renderPoll(){
   });
 }
 
-function checkStreak(){
-  const name = document.getElementById('streakName').value.trim();
-  const result = document.getElementById('streakResult');
-  if(!name){ result.textContent = 'Type your first name first.'; result.classList.add('show'); return; }
-  result.innerHTML = `Nice to see you, <b>${name}</b> — sample streak: <b>3 weeks running</b> 🔥 (this demo doesn't remember between refreshes; the real version would).`;
-  result.classList.add('show');
-  unlockBadge('badge-comeback');
-}
-
 let weeksIndex = null;
 
 async function loadData(){
@@ -463,6 +432,7 @@ async function loadData(){
     items = data.items;
     mascotLines = data.mascotLines;
     pollData = data.poll;
+    mysteryText = data.mystery || '';
     document.querySelector('.eyebrow').textContent = `Week of ${data.weekLabel}`;
     document.getElementById('mascotLineText').innerHTML = `<b>Line of the week:</b> "${mascotLines[0]}"`;
     renderChangelog();
