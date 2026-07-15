@@ -5,8 +5,8 @@
       "id": "2026-07-06",
       "file": "data-2026-07-06.json",
       "range": "Jul 6\u201310, 2026",
-      "summary": "Firms got the ability to charge clients' saved payment methods directly, plus beta features for scheduling bulk client-chat messages and smoother CRM imports, alongside 23 bug fixes including a Stripe reconciliation issue and documents stuck in \"Sending.\"",
-      "tag": "31 shipped"
+      "summary": "Firms got the ability to charge clients' saved payment methods directly, plus beta features for scheduling bulk client-chat messages and smoother CRM imports, alongside 8 bug fixes including a Stripe reconciliation issue and documents stuck in \"Sending.\"",
+      "tag": "14 shipped"
     }
   ]
 }
