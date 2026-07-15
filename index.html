@@ -150,7 +150,11 @@
   .tabbtn.active{background:var(--ink); color:#EAF0FC; border-color:var(--ink);}
 
   .mascot-tip{display:flex; align-items:center; justify-content:flex-end; gap:8px; margin:-6px 0 12px;}
-  .mascot-bubble{background:var(--panel); border:1px solid var(--line); border-radius:12px 12px 12px 2px; padding:6px 10px; font-size:12px; font-weight:500; color:var(--ink); white-space:nowrap; box-shadow:0 1px 2px rgba(21,42,78,0.06);}
+  .mascot-bubble{position:relative; background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:6px 10px; font-size:12px; font-weight:500; color:var(--ink); white-space:nowrap; box-shadow:0 1px 2px rgba(21,42,78,0.06);}
+  .mascot-bubble::before{content:''; position:absolute; right:-8px; top:50%; transform:translateY(-50%); width:0; height:0; border-top:7px solid transparent; border-bottom:7px solid transparent; border-left:8px solid var(--line);}
+  .mascot-bubble::after{content:''; position:absolute; right:-6.5px; top:50%; transform:translateY(-50%); width:0; height:0; border-top:6px solid transparent; border-bottom:6px solid transparent; border-left:7px solid var(--panel);}
+  .mascot-bubble-left::before{right:auto; left:-8px; border-left:none; border-right:8px solid var(--line);}
+  .mascot-bubble-left::after{right:auto; left:-6.5px; border-left:none; border-right:7px solid var(--panel);}
   @media (max-width:520px){ .badge-row{grid-template-columns:repeat(2,1fr);} }
 </style>
 </head>
@@ -206,7 +210,6 @@
       <span class="tag">react to anything — no right answer</span>
     </div>
     <div class="mascot-tip">
-      <div class="mascot-bubble">tap a reaction!</div>
       <svg width="60" height="60" viewBox="0 0 200 230" aria-hidden="true">
         <path d="M80,42 C46,32 18,72 22,122 C25,158 52,178 76,167 C94,159 95,116 88,78 C84,55 84,46 80,42 Z" fill="none" stroke="#152A4E" stroke-width="5" stroke-linejoin="round"/>
         <path d="M120,42 C154,32 182,72 178,122 C175,158 148,178 124,167 C106,159 105,116 112,78 C116,55 116,46 120,42 Z" fill="none" stroke="#152A4E" stroke-width="5" stroke-linejoin="round"/>
@@ -222,6 +225,7 @@
         <line x1="112" y1="218" x2="112" y2="230" stroke="#152A4E" stroke-width="7" stroke-linecap="round"/>
         <line x1="130" y1="216" x2="130" y2="228" stroke="#152A4E" stroke-width="7" stroke-linecap="round"/>
       </svg>
+      <div class="mascot-bubble mascot-bubble-left">tap a reaction!</div>
     </div>
     <div class="card" id="changelog"></div>
   </section>
