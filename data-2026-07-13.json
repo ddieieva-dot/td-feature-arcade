@@ -126,5 +126,5 @@
       "votes": 0
     }
   ],
-  "mystery": "One of this week's bugs was only visible on non-English locales. Somewhere, a QA engineer is very tired and very multilingual."
+  "mystery": "One of this week's bugs only showed up if your app spoke a language other than English. It's fluent in bug-free now, too."
 }
