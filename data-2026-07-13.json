@@ -1,16 +1,16 @@
 {
-  "weekLabel": "Jul 13\u201317, 2026",
+  "weekLabel": "Jul 13–17, 2026",
   "mascotLines": [
-    "Some doors were locked with no key inside. Now everyone gets in, even without a primary human.",
-    "Filtered jobs by status abroad? They actually show up now. Even auf Deutsch.",
-    "A chat said 'done' too early. Now it waits for the actual last task. Better listening than me.",
-    "Firms can restrict payment methods now. Wish someone could restrict my begging methods."
+    "Drag-and-drop is back in the Upload Window. I only drop things on purpose now too.",
+    "Jobs go to whoever holds the role now. I've held the same role forever: professional snack inspector.",
+    "A bill almost lost its payment method mid-creation. I only make things disappear if they're treats.",
+    "You can restrict payment methods now. I'd like that feature applied to my begging privileges."
   ],
   "items": [
     {
       "cat": "released",
       "text": "Automatic pricing updates for firms with special rates",
-      "desc": "Before, moving a firm onto negotiated pricing (a lower processing rate, or a 0% ACH promo period) meant manual steps across Slack, spreadsheets, and Stripe. Now the process is automated, and firms get an automatic email confirming their new rate \u2014 plus another one when a promo period ends and pricing reverts to normal.",
+      "desc": "Before, moving a firm onto negotiated pricing (a lower processing rate, or a 0% ACH promo period) meant manual steps across Slack, spreadsheets, and Stripe. Now the process is automated, and firms get an automatic email confirming their new rate — plus another one when a promo period ends and pricing reverts to normal.",
       "link": "https://taxdome.atlassian.net/browse/TD-89994",
       "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1780491456593769",
       "reacts": {}
@@ -18,7 +18,7 @@
     {
       "cat": "new",
       "text": "Drag and drop is back in the Desktop app's Upload Window",
-      "desc": "You can once again drag files straight from Windows Explorer (or another app) into the Upload Window on the Desktop app \u2014 a feature that went missing when the app was rebuilt. Multiple files at once are supported too.",
+      "desc": "You can once again drag files straight from Windows Explorer (or another app) into the Upload Window on the Desktop app — a feature that went missing when the app was rebuilt. Multiple files at once are supported too.",
       "link": "https://taxdome.atlassian.net/browse/TDAPP-3204",
       "demo": null,
       "reacts": {}
@@ -26,7 +26,7 @@
     {
       "cat": "new",
       "text": "Fewer interruptions from the Document History popup",
-      "desc": "If your firm mainly uses the Desktop app as a drive \u2014 dragging files into it rather than uploading through the browser \u2014 you'll see the Document History popup interrupt you far less often now.",
+      "desc": "If your firm mainly uses the Desktop app as a drive — dragging files into it rather than uploading through the browser — you'll see the Document History popup interrupt you far less often now.",
       "link": "https://taxdome.atlassian.net/browse/TDAPP-3203",
       "demo": null,
       "reacts": {}
@@ -34,7 +34,7 @@
     {
       "cat": "new",
       "text": "Assign jobs by role, not just by name",
-      "desc": "Pipeline automations can now assign jobs to whoever currently holds a role (like Preparer or Manager) instead of a fixed team member \u2014 so when staff change roles, you don't have to go update every automation by hand.",
+      "desc": "Pipeline automations can now assign jobs to whoever currently holds a role (like Preparer or Manager) instead of a fixed team member — so when staff change roles, you don't have to go update every automation by hand.",
       "link": "https://taxdome.atlassian.net/browse/TD-90701",
       "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1782495902554149",
       "reacts": {}
@@ -42,7 +42,7 @@
     {
       "cat": "beta",
       "text": "Payment Method Restrictions",
-      "desc": "Firms can now restrict which payment methods are available to clients \u2014 for example, disabling ACH for certain invoices \u2014 giving more control over how clients are allowed to pay. Limited rollout.",
+      "desc": "Firms can now restrict which payment methods are available to clients — for example, disabling ACH for certain invoices — giving more control over how clients are allowed to pay. Limited rollout.",
       "link": "https://taxdome.atlassian.net/browse/TD-89951",
       "demo": null,
       "reacts": {}
@@ -58,7 +58,7 @@
     {
       "cat": "bug",
       "text": "Some clients couldn't log into their client portal at all",
-      "desc": "Clients whose account didn't have a primary contact set up could hit a server error (500) trying to log into the client portal \u2014 blocking access entirely. Fixed.",
+      "desc": "Clients whose account didn't have a primary contact set up could hit a server error (500) trying to log into the client portal — blocking access entirely. Fixed.",
       "link": "https://taxdome.atlassian.net/browse/TD-93266",
       "demo": null,
       "reacts": {}
@@ -66,7 +66,7 @@
     {
       "cat": "bug",
       "text": "Filtering jobs by status showed zero results on non-English locales",
-      "desc": "On any language other than English, filtering jobs by a status like \"Active\" or \"Completed\" could show no results at all, even when matching jobs existed \u2014 because the filter compared translated text instead of the underlying status. Fixed.",
+      "desc": "On any language other than English, filtering jobs by a status like \"Active\" or \"Completed\" could show no results at all, even when matching jobs existed — because the filter compared translated text instead of the underlying status. Fixed.",
       "link": "https://taxdome.atlassian.net/browse/TD-92955",
       "demo": null,
       "reacts": {}
@@ -74,7 +74,7 @@
     {
       "cat": "bug",
       "text": "Some clients got logged out with an error during two-factor login",
-      "desc": "If you had two browser tabs open at once during email-code login (or the mobile app quietly retried a request), you could hit an error instead of getting signed in. Fixed \u2014 this was affecting a meaningful number of logins.",
+      "desc": "If you had two browser tabs open at once during email-code login (or the mobile app quietly retried a request), you could hit an error instead of getting signed in. Fixed — this was affecting a meaningful number of logins.",
       "link": "https://taxdome.atlassian.net/browse/TD-89601",
       "demo": null,
       "reacts": {}
@@ -90,7 +90,7 @@
     {
       "cat": "bug",
       "text": "CRM imports could tag the wrong account",
-      "desc": "When two accounts had nearly identical names (like one with an extra space), importing tags could apply them to the wrong one \u2014 sometimes an archived account instead of the active one you meant. Fixed so the exact match wins.",
+      "desc": "When two accounts had nearly identical names (like one with an extra space), importing tags could apply them to the wrong one — sometimes an archived account instead of the active one you meant. Fixed so the exact match wins.",
       "link": "https://taxdome.atlassian.net/browse/TD-90435",
       "demo": null,
       "reacts": {}
@@ -98,7 +98,7 @@
     {
       "cat": "bug",
       "text": "Invoice reminder emails offered to pay even when you can't accept payments",
-      "desc": "Clients getting a reminder email saw a \"Pay Invoice\" link and payment instructions even for firms with no payment method enabled \u2014 leading to confused clients hitting a dead end. Now reminders only mention payment when it's actually possible.",
+      "desc": "Clients getting a reminder email saw a \"Pay Invoice\" link and payment instructions even for firms with no payment method enabled — leading to confused clients hitting a dead end. Now reminders only mention payment when it's actually possible.",
       "link": "https://taxdome.atlassian.net/browse/TD-91639",
       "demo": null,
       "reacts": {}
@@ -113,9 +113,18 @@
     }
   ],
   "poll": [
-    {"label": "Payment Method Restrictions", "votes": 0},
-    {"label": "Assign jobs by role", "votes": 0},
-    {"label": "Drag & drop back in Upload Window", "votes": 0}
+    {
+      "label": "Payment Method Restrictions",
+      "votes": 0
+    },
+    {
+      "label": "Assign jobs by role",
+      "votes": 0
+    },
+    {
+      "label": "Drag & drop back in Upload Window",
+      "votes": 0
+    }
   ],
   "mystery": "One of this week's bugs was only visible on non-English locales. Somewhere, a QA engineer is very tired and very multilingual."
 }
