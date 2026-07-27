@@ -1,0 +1,129 @@
+{
+  "weekLabel": "Jul 20\u201327, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "You can pick which treats I'm allowed to have now \u2014 turns out firms can do the same thing with payment methods.",
+    "I can bury a bone today and dig it up again next Tuesday, right on schedule. Bulk client-chat messages work the same way now.",
+    "A squirrel taunted me through the window and I still knew exactly which yard was mine. CRM imports now know exactly which account is which, too.",
+    "I always know when a walk is overdue, upcoming, or way off track. Now your Jobs page can tell you the same thing, in Beta."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Restrict which payment methods clients can use",
+      "desc": "Firms can now restrict which payment methods are available to clients \u2014 for example, disabling ACH for certain invoices \u2014 giving more control over how clients are allowed to pay.",
+      "link": "https://taxdome.atlassian.net/browse/TD-89951",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Schedule bulk client-chat messages ahead of time",
+      "desc": "You can now schedule a chat message to go out to many clients at once on a future date, instead of sending it right away. A new Scheduled section shows everything that's queued up, and you can send now, reschedule, or delete scheduled messages individually or in bulk. Clients aren't notified until the message actually goes out.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90248",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "CRM import now shows a preview before you commit",
+      "desc": "The redesigned contact/account import flow now includes a preview screen before you run the import, plus a results screen afterward \u2014 so you can see what's about to happen and confirm the outcome, instead of importing blind.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90780",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "CRM import errors and warnings are now specific",
+      "desc": "Rows that get skipped during import used to show a generic error even when the real problem was something else, like a bad email or phone number. Now you get the actual reason, and recoverable issues (like an unrecognized team member) get a sensible default applied automatically instead of failing the row outright.",
+      "link": "https://taxdome.atlassian.net/browse/TD-79480",
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Work Forecaster: at-a-glance indicators on the Jobs page",
+      "desc": "A new set of indicators at the top of the Jobs page shows the health of your work at a glance \u2014 Overdue, Upcoming, Past Stage Time Limit, At Risk, On Track, Completed, and Can't Calculate (for jobs missing key dates). Click any indicator to filter the Jobs table straight to those jobs. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-54000",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Desktop app now warns you about printer setup problems",
+      "desc": "In shared/RDP environments, the Desktop app can now detect when its printer or port-monitor registration is missing or broken, and shows an in-app warning explaining what's wrong \u2014 instead of printing silently failing with no explanation.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-3190",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Mobile app now requires your password before setting up 2FA",
+      "desc": "Setting up email/authenticator-based two-factor authentication on the mobile app now requires confirming your password first, closing a gap where a 2FA code could previously be generated without verifying it was really you.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-3679",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Help Center translation now works the same way everywhere",
+      "desc": "The firm-side Help Center now translates on the fly in your browser, matching how the client Help Center already worked \u2014 making language switching more reliable across all supported languages.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93962",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Payment Methods section didn't refresh after a method was disabled mid-payment",
+      "desc": "If a payment method was turned off in firm settings while a payment window was already open, the list of available methods wouldn't update to reflect it. Fixed for prepayments and firm-side invoice payments.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93022",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Klarna and Affirm payments showed raw untranslated text",
+      "desc": "Viewing a completed Klarna or Affirm (buy-now-pay-later) payment in the firm payment sidebar showed a broken placeholder instead of the provider's name and logo. Now it shows the correct brand name and icon.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94186",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "\"Pending KBA\" filter timed out on large firms",
+      "desc": "Filtering the Clients page by \"Pending KBA\" signature status could time out and show an error on firms with a lot of pending signature requests. Fixed with a faster query.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93313",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Job date filters used UTC instead of your firm's timezone",
+      "desc": "Filtering jobs by dates like \"Moved on,\" \"Archived on,\" or \"Completed during\" compared against UTC time rather than your firm's local time \u2014 so an evening event could get bucketed under the wrong day for any firm behind UTC (which is all US timezones). Fixed so these filters match your firm's actual day.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94397",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Some incoming emails created duplicate documents",
+      "desc": "When Outlook occasionally delivered the same incoming email notification twice in quick succession, its attachment could get saved as two separate documents on the client's account instead of one. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90131",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Completed jobs were inflating job counters on Insights",
+      "desc": "The Team Summary widget on Insights was counting completed jobs alongside active ones in its Total, Overdue, Approaching Deadline, and No Activity counters \u2014 making workloads look bigger than they actually were. Fixed so only active jobs count.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94716",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "\"Schedule message\" button ignored form validation",
+      "desc": "In the New Chat sidebar, the main \"Create chats\" button correctly disabled itself when the form was incomplete, but the \"Schedule message\" option next to it stayed clickable regardless. Fixed so both respect the same validation.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92801",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Deleting the last scheduled message could leave you on a broken page",
+      "desc": "Deleting the only scheduled message in a scheduled-only chat thread deletes the whole thread \u2014 but you weren't redirected back to the message list afterward, so you'd land on a 404 for a thread that no longer existed. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92915",
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Restricting which payment methods clients can use", "votes": 7},
+    {"label": "Scheduling bulk client-chat messages ahead of time", "votes": 9},
+    {"label": "Work Forecaster indicators on the Jobs page (Beta)", "votes": 5}
+  ],
+  "mystery": "Fun Work Forecaster detail: the \"Can't Calculate\" indicator disappears completely when there's nothing to flag, but the four health indicators (Overdue, Upcoming, and friends) stay visible even at zero \u2014 showing a calm all-clear instead of just vanishing."
+}

@@ -1,12 +1,19 @@
 {
-  "current": "data-2026-07-13.json",
+  "current": "data-2026-07-20.json",
   "archive": [
+    {
+      "id": "2026-07-13",
+      "file": "data-2026-07-13.json",
+      "range": "Jul 13\u201315, 2026 (test run \u2014 partial week)",
+      "summary": "A short test-run window covering automatic pricing-update emails for special-rate firms, drag-and-drop restored in the Desktop app's Upload Window, and 8 bug fixes including a 2FA login crash and payment methods getting wiped mid-billing.",
+      "tag": "12 shipped"
+    },
     {
       "id": "2026-07-06",
       "file": "data-2026-07-06.json",
       "range": "Jul 6\u201310, 2026",
-      "summary": "Firms got the ability to charge clients' saved payment methods directly, plus beta features for scheduling bulk client-chat messages and smoother CRM imports, alongside 8 bug fixes including a Stripe reconciliation issue and documents stuck in \"Sending.\"",
-      "tag": "14 shipped"
+      "summary": "Firms got the ability to charge clients' saved payment methods directly, plus beta features for scheduling bulk client-chat messages and smoother CRM imports, alongside 23 bug fixes including a Stripe reconciliation issue and documents stuck in \"Sending.\"",
+      "tag": "31 shipped"
     }
   ]
 }
