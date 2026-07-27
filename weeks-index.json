@@ -4,9 +4,9 @@
     {
       "id": "2026-07-13",
       "file": "data-2026-07-13.json",
-      "range": "Jul 13\u201315, 2026 (test run \u2014 partial week)",
-      "summary": "A short test-run window covering automatic pricing-update emails for special-rate firms, drag-and-drop restored in the Desktop app's Upload Window, and 8 bug fixes including a 2FA login crash and payment methods getting wiped mid-billing.",
-      "tag": "12 shipped"
+      "range": "Jul 13\u201317, 2026",
+      "summary": "Automatic pricing-update emails rolled out for special-rate firms, jobs could be assigned by role instead of by name, drag-and-drop returned to the Desktop app's Upload Window, and Payment Method Restrictions entered beta \u2014 alongside 8 bug fixes including a 2FA login crash and payment methods getting wiped mid-billing.",
+      "tag": "13 shipped"
     },
     {
       "id": "2026-07-06",
