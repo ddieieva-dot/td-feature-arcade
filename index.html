@@ -704,8 +704,11 @@ let lineIdx = 0;
 function petDog(){
   const dog = document.getElementById('dogSvg');
   dog.classList.remove('happy');
-  void dog.offsetWidth;
-  dog.classList.add('happy');
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      dog.classList.add('happy');
+    });
+  });
   lineIdx = (lineIdx + 1) % mascotLines.length;
   document.getElementById('mascotLineText').innerHTML = `<b>Line of the week:</b> ${mascotLines[lineIdx]}`;
 }
