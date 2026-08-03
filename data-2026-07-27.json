@@ -1,0 +1,97 @@
+{
+  "weekLabel": "Jul 27\u2013Aug 3, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "I can fill out my own paperwork if you hand me a tablet and enough treats. Clients can now do the same right at your office.",
+    "Nobody sneaks past me at the front door. Now nobody can sneak in and disconnect your QuickBooks either.",
+    "I always check my leash is clipped before I bolt for the yard. Deleting a payment method now gives you the same kind of heads-up.",
+    "I know exactly when it's dinnertime, down to the minute. Your seat renewals now give you that same advance warning."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Kiosk Mode: clients can fill out organizers on your office tablet",
+      "desc": "Clients visiting your office in person can now complete their organizer forms and submit documents directly on a tablet at the firm \u2014 no need to log into the client portal from home to get it done.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-2825",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Heads-up email before monthly/seasonal seat renewals",
+      "desc": "Firms with monthly or seasonal seats now get an advance email a few days before those seats renew, showing which seats, the renewal date, and the amount \u2014 so a renewal charge is never a surprise.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91981",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Closed a security gap in the QuickBooks disconnect link",
+      "desc": "A QuickBooks-related link could previously be used to disconnect a firm's QuickBooks connection without anyone logging in. That gap is now closed, so only the right person can disconnect it.",
+      "link": "https://taxdome.atlassian.net/browse/TD-88713",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Some invoices were getting stuck and never reaching QuickBooks",
+      "desc": "When two invoices briefly collided on the same invoice number during syncing, the sync could fail permanently and the invoice would never make it to QuickBooks. Fixed so syncing recovers properly instead of silently giving up.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95079",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Adding an unsupported payment method type showed a confusing error",
+      "desc": "If a client tried to add a payment method type the firm hadn't activated in Stripe, they could hit a generic error page instead of a clear \"this isn't available\" message. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95092",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Saved Canadian bank-debit payment methods were wrongly grayed out",
+      "desc": "Clients of Canadian firms with a saved bank-debit payment method sometimes saw it grayed out as \"not accepted,\" even though the firm accepted it and the method worked fine. Fixed so it displays and pays correctly.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95163",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Time-tracking figures were visible without the right permissions",
+      "desc": "Time-tracked, time-variance, and budget-time figures on the Jobs and pipeline board could be seen by any team member behind the scenes, even without permission to view them. Now they're properly restricted to people with the right access.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94556",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Inbox+ stopped showing client task check-ins",
+      "desc": "When a client checked off a task in chat without also sending a reply, that update stopped showing up in Inbox+ \u2014 only email/push notifications still fired. Fixed so staff relying on Inbox+ see these check-ins again.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95549",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Deleting a payment method didn't warn about linked recurring invoices",
+      "desc": "The confirmation popup for deleting a client's saved payment method didn't mention if that method was tied to an active recurring invoice \u2014 risking billing getting quietly broken. Now it shows you exactly which invoice is linked before you delete.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95590",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Large dollar amounts overlapped on printed Proposals & Engagement Letters",
+      "desc": "On printed or PDF Proposals and Engagement Letters, very large Rate, Tax, or Amount values in the Services table could overlap the neighboring column and become unreadable. Fixed so every value displays clearly, even large ones.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95159",
+      "demo": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Kiosk Mode: organizers on your office tablet", "votes": 0},
+    {"label": "Heads-up email before seat renewals", "votes": 0},
+    {"label": "QuickBooks invoice sync fix", "votes": 0}
+  ],
+  "mystery": "Fun number from this week: before we fixed the Canadian bank-debit display bug, those payment methods had already quietly powered 601 successful client payments over the past year \u2014 the bug only broke how they *looked*, never the money itself."
+}

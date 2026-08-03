@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-07-20.json",
+  "current": "data-2026-07-27.json",
   "archive": [
+    {
+      "id": "2026-07-20",
+      "file": "data-2026-07-20.json",
+      "range": "Jul 20\u201327, 2026",
+      "summary": "Payment method restrictions, scheduled bulk client-chat messages, and the redesigned CRM import all reached full release, Work Forecaster job-health indicators entered beta, and the Desktop app started warning about printer setup problems \u2014 alongside 8 bug fixes including Klarna/Affirm display issues and job date filters using the wrong timezone.",
+      "tag": "16 shipped"
+    },
     {
       "id": "2026-07-13",
       "file": "data-2026-07-13.json",
