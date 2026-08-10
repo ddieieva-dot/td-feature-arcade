@@ -109,5 +109,5 @@
     {"label": "Activity Feed tracking tax return sends/resends", "votes": 0},
     {"label": "Inbox+ notification cleanup (Beta)", "votes": 0}
   ],
-  "mystery": "A companion billing bug that didn't make the main list: some billing-cycle upgrade pages were quoting the wrong price entirely \u2014 as little as half price, sometimes $0.00 \u2014 for the exact same scenario that let the upgrade skip its invoice altogether. Same root cause, two different ways to get it wrong, fixed in the same pass."
+  "mystery": "Nothing hidden in the vault this week \u2014 every single thing we shipped is already sitting up there in plain sight. Even I couldn't find anything to bury."
 }
