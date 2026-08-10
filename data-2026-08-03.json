@@ -1,0 +1,113 @@
+{
+  "weekLabel": "Aug 3\u201310, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "Recurring invoices stopped marking themselves \u2018Completed\u2019 after just one payment. I only declare nap time complete once all four legs stop twitching.",
+    "Inbox+ is cutting down on repeat notifications. I will, however, still bark at the mailman every single day. Some traditions are non-negotiable.",
+    "You can now sort pipeline jobs by Intake Date. I sort my toys by \u2018most recently stolen from the couch\u2019 \u2014 it's a simpler system, but it works for me.",
+    "Clients can finally pay $0 invoices from the mobile app. I have never once complained about being paid zero treats for a trick. Growth mindset."
+  ],
+  "items": [
+    {
+      "cat": "new",
+      "text": "Sort pipeline jobs by more fields, including Intake Date",
+      "desc": "Sorting inside the pipeline view used to be limited and unreliable \u2014 fields like Intake Date and Internal Deadline were only sortable from the Jobs page. Now pipeline sorting includes those same fields and behaves consistently, so you don't have to jump back to the Jobs page just to sort your work the way you want.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90720",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1785758131456269",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Activity Feed now tracks tax return sends, recalls, and resends",
+      "desc": "The Activity Feed now records every time a tax return package is sent to a client, recalled, or resent without changes \u2014 with each entry showing what happened, when, and who did it. That means you can reconstruct the full back-and-forth on a package instead of only seeing the latest action.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94683",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Create an account checklist straight from a Checklist Template",
+      "desc": "When building a Document Checklist on an account, you can now pick an existing Checklist Template and have its items pre-filled automatically \u2014 instead of typing the same list out by hand every time you set one up for a client.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92934",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Filter email threads by read/unread",
+      "desc": "Both the \u201cAssigned to me\u201d and \u201cAll Accounts\u201d email pages now have a filter for read/unread status, so you can quickly pull up just the threads that still need a reply instead of scanning the whole list.",
+      "link": "https://taxdome.atlassian.net/browse/TD-74011",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1771581717232559",
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Inbox+ notification cleanup",
+      "desc": "Inbox+ (the notifications hub) is getting decluttered in beta \u2014 fewer low-value or duplicate notifications, related notifications grouped together, and more consistent-looking cards with quick actions like reply or assign built right in. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-80095",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recurring invoices marked themselves \u201cCompleted\u201d after just one payment",
+      "desc": "If a client signed a proposal with a recurring, autopay invoice, the invoice's status could flip from Active to Completed right after the very first scheduled payment \u2014 even if that payment failed, and even with many payments still left on the schedule. Fixed so the status now reflects what's actually happened.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96334",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Billing cycle upgrades could skip the invoice entirely",
+      "desc": "Upgrading a firm to a longer billing cycle (say, 1 year to 2 years) while it had a lot of bonus time banked could extend the subscription for free, with no invoice ever created in Stripe. Fixed so these upgrades are billed correctly.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95865",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "\u201cPending Signature\u201d filter could error out on large firms",
+      "desc": "Filtering the Clients page by \u201cPending Signature,\u201d or just viewing pending-signature counts, could throw a server error on firms with a lot of signature requests. Fixed with a faster, more reliable query.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95417",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "A specific organizer checklist item could vanish from view",
+      "desc": "Adding the \u201cHealth Insurance (1095)\u201d item to an organizer's Document Checklist through Edit Checklist could make that item invisible in both the firm and client view, while the item count also went out of sync (showing \u201c0 of 6\u201d with only 5 items listed). Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96065",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Clients couldn't pay $0 invoices from the mobile app",
+      "desc": "Clients could already pay a $0 invoice on the web portal, but trying to do the same from the mobile app threw a \u201cValue must be greater than 0\u201d error instead. Fixed so $0 invoices can be paid on mobile too.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-2192",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Paying small invoices in the mobile app showed a generic \u201cError\u201d",
+      "desc": "Trying to pay an invoice under $0.50 in the mobile app just showed a bare \u201cError\u201d message with no explanation. It now shows the same clear message clients already see on the web.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-2149",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recurring invoice descriptions were missing in the mobile app",
+      "desc": "The Description field filled in while setting up a recurring invoice inside a proposal wasn't showing up when the client viewed that proposal in the mobile app. Fixed so it displays there like it does everywhere else.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-2316",
+      "demo": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Sortable pipelines (Intake Date & more)", "votes": 0},
+    {"label": "Activity Feed tracking tax return sends/resends", "votes": 0},
+    {"label": "Inbox+ notification cleanup (Beta)", "votes": 0}
+  ],
+  "mystery": "A companion billing bug that didn't make the main list: some billing-cycle upgrade pages were quoting the wrong price entirely \u2014 as little as half price, sometimes $0.00 \u2014 for the exact same scenario that let the upgrade skip its invoice altogether. Same root cause, two different ways to get it wrong, fixed in the same pass."
+}

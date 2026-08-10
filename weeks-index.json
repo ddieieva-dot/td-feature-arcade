@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-07-27.json",
+  "current": "data-2026-08-03.json",
   "archive": [
+    {
+      "id": "2026-07-27",
+      "file": "data-2026-07-27.json",
+      "range": "Jul 27\u2013Aug 3, 2026",
+      "summary": "Kiosk Mode let clients fill out organizers right on an office tablet, and firms got a heads-up email ahead of monthly/seasonal seat renewals \u2014 alongside 8 bug fixes including a closed QuickBooks security gap, invoices that were getting stuck before reaching QuickBooks, and a payment-method deletion warning for linked recurring invoices.",
+      "tag": "10 shipped"
+    },
     {
       "id": "2026-07-20",
       "file": "data-2026-07-20.json",
