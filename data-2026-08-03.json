@@ -17,22 +17,6 @@
     },
     {
       "cat": "new",
-      "text": "Activity Feed now tracks tax return sends, recalls, and resends",
-      "desc": "The Activity Feed now records every time a tax return package is sent to a client, recalled, or resent without changes \u2014 with each entry showing what happened, when, and who did it. That means you can reconstruct the full back-and-forth on a package instead of only seeing the latest action.",
-      "link": "https://taxdome.atlassian.net/browse/TD-94683",
-      "demo": null,
-      "reacts": {}
-    },
-    {
-      "cat": "new",
-      "text": "Create an account checklist straight from a Checklist Template",
-      "desc": "When building a Document Checklist on an account, you can now pick an existing Checklist Template and have its items pre-filled automatically \u2014 instead of typing the same list out by hand every time you set one up for a client.",
-      "link": "https://taxdome.atlassian.net/browse/TD-92934",
-      "demo": null,
-      "reacts": {}
-    },
-    {
-      "cat": "new",
       "text": "Filter email threads by read/unread",
       "desc": "Both the \u201cAssigned to me\u201d and \u201cAll Accounts\u201d email pages now have a filter for read/unread status, so you can quickly pull up just the threads that still need a reply instead of scanning the whole list.",
       "link": "https://taxdome.atlassian.net/browse/TD-74011",
@@ -106,7 +90,7 @@
   ],
   "poll": [
     {"label": "Sortable pipelines (Intake Date & more)", "votes": 0},
-    {"label": "Activity Feed tracking tax return sends/resends", "votes": 0},
+    {"label": "Email filter by read/unread", "votes": 0},
     {"label": "Inbox+ notification cleanup (Beta)", "votes": 0}
   ],
   "mystery": "Nothing hidden in the vault this week \u2014 every single thing we shipped is already sitting up there in plain sight. Even I couldn't find anything to bury."
