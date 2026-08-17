@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-08-03.json",
+  "current": "data-2026-08-10.json",
   "archive": [
+    {
+      "id": "2026-08-03",
+      "file": "data-2026-08-03.json",
+      "range": "Aug 3\u201310, 2026",
+      "summary": "Pipeline sorting got more useful fields including Intake Date, email threads gained a read/unread filter, and Inbox+ notification cleanup entered beta \u2014 alongside 7 bug fixes including recurring invoices marking themselves \"Completed\" too early and $0 invoices finally payable from the mobile app.",
+      "tag": "10 shipped"
+    },
     {
       "id": "2026-07-27",
       "file": "data-2026-07-27.json",

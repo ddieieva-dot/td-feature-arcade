@@ -1,0 +1,185 @@
+{
+  "weekLabel": "Aug 10\u201317, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "I can leave a chew toy half-buried and finish later. Invoices can now sit as a draft too, no rush.",
+    "Paying with just a tap of my paw would be a dream. Clients get that dream now, with Apple Pay and Google Pay.",
+    "I sort my toys by room without asking anyone. Now the Desktop app can send your files to different folders in one go, too.",
+    "I don't bark at every guest anymore \u2014 just the one mail carrier. Tax Return approvals now email exactly one approver too."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Overview page gets a big refresh: account info and status at a glance",
+      "desc": "The Overview page didn't clearly show account status, and useful info was scattered \u2014 notes, jobs, communication, and recent docs all needed scrolling to find. Now there's a new Account info block up top, a redesigned Notes section, and a reorganized Overview area that surfaces Clients' to-do's, Jobs & Tasks, Communication, recent docs, and the activity feed together.",
+      "link": "https://taxdome.atlassian.net/browse/TD-59351",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1763400483921289",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Overview page, part 2: Billing, Recently completed, and Account roles all in one place",
+      "desc": "Building on the Overview redesign: invoices, recurring invoices, payments, WIP, and time entries now live together in one interactive Billing tab. A new Recently completed section shows the last 10 finished items, a read-only Account roles list shows who's assigned to what, and Contacts now open in a sidebar with one click instead of an accordion.",
+      "link": "https://taxdome.atlassian.net/browse/TD-63884",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1765986097177519",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Overview page: polish based on real feedback",
+      "desc": "Following research on the new Overview page, several sections got clearer names and layouts: \"Client Docs\" is now \"Recent uploads\" (showing client and firm files together, sorted by last activity), \"Client Communications\" is now \"Messages\", Jobs got a new Status column, Billing columns line up consistently across tables, and a new \"Last login\" line was added under the Account header.",
+      "link": "https://taxdome.atlassian.net/browse/TD-86871",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Clients can now pay with Apple Pay and Google Pay",
+      "desc": "Clients can check out with Apple Pay or Google Pay \u2014 in the client portal, on the guest invoice payment page (no login needed), and in the mobile app \u2014 giving them a faster way to pay without typing in card details.",
+      "link": "https://taxdome.atlassian.net/browse/TD-89527",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1779698979924169",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "New Payout Reconciliation Report for TaxDome Payments",
+      "desc": "Firms using TaxDome Payments can now generate a CSV report that lines up every Stripe payout with its charges, refunds, adjustments, and fees \u2014 handy for matching what actually lands in the bank account to what happened in TaxDome. Pick a date range (last 30 days, last month, current quarter, or year) and the report arrives by email as a download link once it's ready.",
+      "link": "https://taxdome.atlassian.net/browse/TD-76987",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1780582345688939",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Invoices can now be saved as a draft",
+      "desc": "Before, a one-time invoice had to be finished and sent in one sitting. Now firms can save it as a draft, come back later to finish it, and only trigger client emails, QuickBooks sync, and reminders once it's actually submitted. Drafts stay invisible to clients and can be edited, duplicated, or deleted right from the invoices list.",
+      "link": "https://taxdome.atlassian.net/browse/TD-43956",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1782236846955549",
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Desktop app: send files for the same client to different folders in one upload",
+      "desc": "Multi-file upload in the Desktop app used to force every file in a batch into one folder. Now you can upload several files for the same client and route each one to its own folder in a single pass \u2014 handy when a tax-prep batch includes a return, an engagement letter, an invoice, and source documents that all belong in different places.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-3020",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Firms can now pay a custom partial amount on an invoice",
+      "desc": "Previously, paying an invoice on a client's behalf meant paying the full amount. Now there's an editable amount field, so a firm can charge exactly what they intend \u2014 partial or full \u2014 using a saved or new payment method, with the client's credits applied automatically if they have any.",
+      "link": "https://taxdome.atlassian.net/browse/TD-86242",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Firms can create online prepayments using a saved payment method",
+      "desc": "Before, firms could only record manual (offline) prepayments \u2014 online prepayments were client-side only. Now a Firm Owner or Admin can open the Payments tab, pick an account, choose a saved payment method, and create an online prepayment that adds straight to the client's credit balance.",
+      "link": "https://taxdome.atlassian.net/browse/TD-86228",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Bulk \"Pay invoice\" now works on partially-paid invoices too",
+      "desc": "Selecting invoices in bulk to pay used to quietly skip anything already partially paid \u2014 even if it was the only invoice selected. Now bulk \"Pay invoice\" settles the remaining balance on a partially-paid invoice, matching what the individual 3-dot menu option already did.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93985",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Services list now has a search bar",
+      "desc": "Finding a specific service in a long Services list used to mean scrolling through everything. Now you can search by service name, matching how search already works on the Custom rates page.",
+      "link": "https://taxdome.atlassian.net/browse/TD-83009",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Send bulk payment reminders right from the invoice list",
+      "desc": "Reminders used to go out one invoice at a time. Now you can select multiple unpaid invoices from the invoice list and send reminders for all of them in one action \u2014 a real time-saver for firms chasing down a lot of outstanding invoices.",
+      "link": "https://taxdome.atlassian.net/browse/TD-53015",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1785923928490809",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Proposals can now be previewed before sending",
+      "desc": "Firms can now preview a proposal exactly as the client will see it \u2014 including any custom fields \u2014 before it goes out, instead of sending it blind.",
+      "link": "https://taxdome.atlassian.net/browse/TD-74038",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Link email threads directly to a Job",
+      "desc": "You can now link an email thread to a Job, start a new email thread right from a Job, and see linked threads from either side \u2014 so email context doesn't get stranded outside the Job it relates to. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-74391",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1786710288239619",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "TRD Approval: \"Resend\" was emailing every possible recipient instead of just the approver",
+      "desc": "Resending a Tax Return Delivery for approval could send the email to everyone who could have approved it, not just the one approver you picked \u2014 and the same person could get it twice. Fixed so Resend now reaches only the intended approver, once.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96982",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "TRD Approval: \"Request changes\" was silently canceling a client's payment reminders",
+      "desc": "Requesting changes on a Tax Return Delivery deleted any planned payment reminders tied to it, and Resend didn't restart the reminder for an unsigned return \u2014 so clients could stop hearing about documents still waiting on them. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96981",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Migration Tool: .zip files were silently dropped but marked as migrated",
+      "desc": "When bulk-importing client documents with the migration tool, .zip files inside a client folder weren't actually uploaded \u2014 but the CSV report claimed they'd migrated successfully anyway. Fixed so the report now reflects what really happened.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96209",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Invoices were showing tax info even with the Tax toggle turned off",
+      "desc": "If a firm disabled the Tax column and set the default tax rate to 0, tax information could still show up on an invoice under certain conditions. Fixed so tax details only appear when tax is actually enabled.",
+      "link": "https://taxdome.atlassian.net/browse/TD-43694",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Creating an invoice from a proposal was blocked while an ACH deposit was still processing",
+      "desc": "A proposal with an ACH deposit still processing looked \"not signed\" to the invoice-creation flow, even though the deposit was genuinely on its way and nothing on the backend actually blocked it. Fixed so firms aren't stuck waiting on a false block.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96715",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Searching inside filter dropdowns stopped working across Jobs, Tasks, Clients, and Contacts",
+      "desc": "Typing in the search box inside the Filter dropdown returned \"Nothing found\" no matter what you searched for, on the Jobs, Tasks, Clients, and Contacts pages \u2014 forcing people to scroll and eyeball the whole list instead. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96844",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "A payment could fail outright if an invoice had an empty line item",
+      "desc": "Invoices with a service line at zero quantity could get flatly rejected by Stripe, blocking the whole payment instead of just skipping that line. Fixed so these payments go through normally.",
+      "link": "https://taxdome.atlassian.net/browse/TD-85140",
+      "demo": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Invoices: Save as draft", "votes": 0},
+    {"label": "Apple Pay & Google Pay for clients", "votes": 0},
+    {"label": "Payout Reconciliation Report", "votes": 0}
+  ],
+  "mystery": "This week's raw Jira pull was our biggest yet \u2014 over 600 tickets touched \"Released\" status, most of it invisible backend cleanup (an entire tech-debt sweep of the Getting Paid cluster) that'll never show up here. The 21 items above are the real, customer-facing tip of that iceberg."
+}
