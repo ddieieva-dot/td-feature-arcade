@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-08-10.json",
+  "current": "data-2026-08-17.json",
   "archive": [
+    {
+      "id": "2026-08-10",
+      "file": "data-2026-08-10.json",
+      "range": "Aug 10\u201317, 2026",
+      "summary": "The client Overview page got a three-part redesign, clients gained Apple Pay and Google Pay checkout, invoices can now be saved as drafts, and a new Payout Reconciliation Report shipped \u2014 alongside 6 new billing features and 7 bug fixes including two Tax Return Delivery approval bugs and a migration tool that silently dropped .zip files.",
+      "tag": "21 shipped"
+    },
     {
       "id": "2026-08-03",
       "file": "data-2026-08-03.json",

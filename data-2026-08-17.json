@@ -1,0 +1,256 @@
+{
+  "weekLabel": "Aug 17\u201324, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "TRD finally lost its \u2018Beta\u2019 tag. I lost my puppy teeth and nobody made it this big a deal either.",
+    "Setting up 2FA now asks for your password first. I always sniff a new leash before I let you clip it on.",
+    "Print two files with the same name and they used to eat each other whole. I've never once mixed up two treats, no matter what you call them.",
+    "Job stages stopped quietly sliding back when nobody was looking. I, on the other hand, absolutely still sneak back onto the couch."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Password confirmation required before setting up 2FA",
+      "desc": "Setting up email- or authenticator-based two-factor authentication now requires confirming your password first \u2014 the same protection already added to the mobile app a few weeks ago, now extended to the web/firm side. This closes a gap where a 2FA code could previously be generated without verifying it was really you.",
+      "link": "https://taxdome.atlassian.net/browse/TD-85797",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Tax Return Delivery is no longer labeled Beta",
+      "desc": "TRD has graduated out of Beta everywhere it appears \u2014 starting a new tax return, the Documents tab, and PDF document actions. In its place, firm members now see \u2018Coming soon\u2019 teasers inside the editor for upcoming AI features (page grouping, tax summaries, signature placement) and for showing when a client has paid.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95104",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Shortcode buttons added to Task Templates",
+      "desc": "Task Templates now show the same shortcode insert buttons already available in Job Templates, in both the title and description fields. Shortcodes already worked if typed manually \u2014 this just makes the feature easy to find.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93846",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787154254256639",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Faster bank-account setup for firm subscription payments",
+      "desc": "Firms paying by ACH bank transfer for their own TaxDome subscription no longer have to wait 2\u20135 business days for standard micro-deposit verification. Stripe now verifies the bank account instantly when possible, or skips the wait entirely \u2014 removing a common delay in getting a subscription payment method set up.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91100",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1786699681982079",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Clearer signature design on proposals with multiple signers",
+      "desc": "When a proposal has more than one signer on the same account, it's now visually obvious whose signature belongs to whom \u2014 fixing a common source of confused, mixed-up signatures and related support questions.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95462",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787054296341209",
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Bulk checklist import now returns a full results file",
+      "desc": "Importing checklists in bulk from a CSV or Excel file now gives you back a complete results file \u2014 every row from your original file, plus a Result and Reason column \u2014 so you can see exactly what happened to each row (imported, skipped, or already had items), not just the ones that had problems.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95618",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Tax Return Delivery editor: polish for editing a sent TRD",
+      "desc": "Editing an already-sent TRD or resending it without changes got a round of polish: locked fields now explain why they're locked when you hover, the Approval result shows in a cleaner card, and a client's \u2018changes requested\u2019 message now displays correctly instead of disappearing. Several smaller edit-mode quirks were straightened out along the way.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96073",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Clearer badge for partially-signed documents in clients' to-do list",
+      "desc": "The badge shown for a partially-signed document in a client's to-do list has been improved, making it easier for clients to tell a document still needs their attention.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97587",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: fix a disapproved return without rebuilding it",
+      "desc": "When a client disapproves a Tax Return Delivery, firms currently have to build a whole new TRD from scratch. This is exploring a lighter way to correct and re-send just what needs fixing.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1984",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: choose exactly who has to approve",
+      "desc": "Right now, any contact with portal access can approve a Tax Return Delivery. This would let firms designate one specific approver instead.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1983",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: AI auto-classifies signature and voucher pages",
+      "desc": "Instead of manually tagging which pages of a tax return are signature pages vs. payment vouchers, AI would do the classification for you — one of the 'Coming soon' teasers already visible in this week's TRD editor update.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1893",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: AI auto-fills the Tax Summary",
+      "desc": "AI would pull payment, refund, and estimated-payment details straight from the 1040 into the TRD Tax Summary, instead of firms entering each figure by hand — the other 'Coming soon' teaser already visible in this week's TRD editor update.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1891",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Sign and pay recurring invoices on the client's behalf",
+      "desc": "Firms would be able to sign and pay a recurring invoice for a client directly from the firm portal, instead of waiting on the client — aimed at cutting payment delays on retainer-based work.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1719",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Take in-person card payments with a connected terminal",
+      "desc": "Firms with walk-in clients would be able to charge a card directly from the invoice using a card reader, instead of recording payments manually or texting a payment link during an office visit.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1060",
+      "demo": null,
+      "quarter": "Now",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "One QuickBooks deposit per Stripe payout",
+      "desc": "Instead of QuickBooks showing a separate deposit for every single client payment, one Stripe payout would sync as one clean QuickBooks deposit — cutting out manual bank-reconciliation work for firms using TaxDome Payments with QBO.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1763",
+      "demo": null,
+      "quarter": "Now",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "No warning when leaving Billing settings with an unsaved change",
+      "desc": "Toggling \u2018Hide invoices from clients\u2019 in Settings \u2192 Billing and then navigating away without clicking Save used to silently discard the change with no warning \u2014 meaning a firm could believe invoices were hidden from clients when they weren't. Now there's a proper unsaved-changes warning.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97180",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Desktop app: Print-to-TaxDome broken by a recent Windows update",
+      "desc": "A Windows security update (KB5120708) broke Print-to-TaxDome for any document containing an image or certain fonts \u2014 effectively every real document \u2014 causing print jobs to fail outright. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-3503",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Desktop app: printing two files with the same name could overwrite each other",
+      "desc": "Printing two documents back-to-back with the same source filename (e.g. two prints from the same Word file) could cause the second one to overwrite the first's temporary file, losing pages. Fixed so each printed file gets its own temp file.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-3325",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Updating a job's pipeline stage could throw a server error",
+      "desc": "Certain failed attempts to change a job's pipeline stage returned a raw server error instead of a clear message explaining what went wrong. Fixed so the real reason is shown.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97164",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recording a payment on certain bills could throw a server error",
+      "desc": "Recording a manual payment on a bill that had never been formally posted could return a server error instead of completing normally. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94347",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "TRD Approval: approver picker showed an email instead of a name",
+      "desc": "When choosing who needs to approve a Tax Return Delivery, the picker only showed the client's login email instead of their name. Fixed so the contact's name now displays alongside their email.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97359",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "TRD Approval: client's \u2018changes requested\u2019 message wasn't showing",
+      "desc": "When a client requested changes on a Tax Return Delivery, the message they wrote to the firm wasn't showing up anywhere on the result card \u2014 just a bare \u2018Changes were requested\u2019 label. Fixed so the client's actual message now displays.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97366",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Saving a paid invoice could throw a server error instead of a clear permission message",
+      "desc": "A team member with billing access but no pipeline-job permissions could get a generic server error just from saving any edit to a paid invoice linked to a job \u2014 even without touching the job itself. Fixed so the real permission message shows instead.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96414",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "\u2018&\u2019 in a Task Template name broke template search",
+      "desc": "Typing \u2018&\u2019 into a Task Template name saved it in a way that broke searching for that template later \u2014 reported directly by a firm relying on \u2018&\u2019 in client/matter names for their daily template search. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96879",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Manual recurring-invoice payment failures showed clients the wrong notification",
+      "desc": "When a one-time invoice created by a manual recurring-invoice automation failed to pay, clients saw a notification about the underlying recurring invoice \u2014 which they don't have visibility into and never explicitly agreed to \u2014 instead of a notification about the specific invoice they were trying to pay. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-80832",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Payout Reconciliation Report could silently fail to generate",
+      "desc": "If Stripe returned an unexpected error while building a Payout Reconciliation Report, the report could fail silently \u2014 the firm that requested it never got the CSV or any error notice. Fixed so failures are now handled and reported.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96474",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Editing an invoice mid-payment could cause a mismatch with Stripe",
+      "desc": "A firm member editing an invoice at the exact moment a client's payment was being processed could create a mismatch between TaxDome's records and Stripe's. Backend validation now blocks edits while a payment is actively processing.",
+      "link": "https://taxdome.atlassian.net/browse/TD-30186",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Document migration tool: \u2018Start new\u2019 didn't actually start fresh",
+      "desc": "Clicking \u2018Start new\u2019 on the document migration tool's Resume screen was supposed to discard the previous migration and let you pick a new folder \u2014 instead it silently returned to the old migration and re-ran it. Fixed. A mislabeled progress counter (showing \u2018accounts\u2019 when it was actually counting files) was corrected too.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97301",
+      "demo": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Job stage could silently revert after changing a custom status",
+      "desc": "Changing a job's Stage (without saving) and then applying a custom status could cause the Stage to silently snap back to its old value, while other unsaved changes stayed intact \u2014 risking firms believing a job had moved stages when it hadn't. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97557",
+      "demo": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Tax Return Delivery graduates from Beta", "votes": 0},
+    {"label": "Instant/skip ACH verification for subscriptions", "votes": 0},
+    {"label": "Shortcode buttons in Task Templates", "votes": 0}
+  ],
+  "mystery": "Removing TRD's \u2018Beta\u2019 tag quietly added four \u2018Coming soon\u2019 teasers inside the editor \u2014 AI page grouping, AI tax summaries, AI signature placement, and one about invoice payment status. None of them work yet, but now you know they're coming."
+}
