@@ -1,0 +1,314 @@
+{
+  "weekLabel": "Aug 24\u201331, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "Desktop can now link, lock, and request signature in one click. I still need four separate zoomies before a walk feels official.",
+    "TRD AI can group pages and draft a Tax Summary now, in Beta. I sort my toys into 'chewed' and 'not yet chewed' \u2014 no AI required.",
+    "Recurring invoices stopped double-charging on signing day. I only ever beg for one treat at a time. Mostly.",
+    "Folder names with weird symbols finally upload instead of vanishing. I've never lost a stick, no matter how oddly shaped."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Desktop: set up and send a document in one pass with Configure & Send",
+      "desc": "Since the Desktop app was rebuilt, applying link-to-job, lock-to-invoice, request approval, and request signature to an uploaded document meant up to four separate trips out to the browser and back. Now a single Configure & Send sidebar lets you set any combination of those four actions and confirm them all at once, without leaving Desktop for each one.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90737",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787841414618929",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Pipeline settings: search and sort the \"Available to\" team member list",
+      "desc": "The \"Available to\" dropdown in pipeline settings used to show every team member as one long, unsorted list. Firms with a lot of staff now get a search box and an alphabetically sorted list, so finding the right person doesn't mean scrolling and eyeballing the whole thing.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90068",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787572377312799",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Invoice emails now show the real balance due, not just the full total",
+      "desc": "If a credit was applied to an invoice after it was created, the invoice email still showed the full original amount as unpaid \u2014 with nothing indicating a credit had brought the balance down. Now the initial invoice email shows the actual balance due, the same way reminder emails already do.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96659",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Payments list: \"Team member\" column renamed to \"Initiated by\", now shows clients too",
+      "desc": "The Payments list column used to only fill in a name for firm-initiated payments, leaving it blank for anything a client paid themselves. It's now called \"Initiated by\" and shows the actual person behind every payment \u2014 team member or client contact \u2014 across Billing, account pages, CSV exports, and print.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97500",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787739620543369",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Overview: Client to-do's now lists every action still needed, not just one",
+      "desc": "When a document needed more than one thing from a client \u2014 say, review it, sign it, and pay an invoice \u2014 the Client to-do's row on the Overview page only showed one of those actions, hiding the rest. Now every required action for that row is surfaced, so firms can see the full picture at a glance.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97627",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Intro templates can now pull in a client's custom fields",
+      "desc": "Firms often want to include client-specific details in an Intro letter, but that information lives in custom fields with no quick way to bring it in \u2014 meaning it either got left out or had to be typed in by hand every time. Custom fields are now available as shortcodes inside Intro templates, the same way they already work in Proposals.",
+      "link": "https://taxdome.atlassian.net/browse/TD-78571",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "TRD AI: turn on automatic page grouping and classification",
+      "desc": "The foundation for TRD's AI features is here: firms can turn on AI in TRD settings so uploaded pages get automatically classified and grouped (like telling signature pages apart from payment vouchers) instead of tagging them by hand. This is the AI page-grouping teased as \"coming soon\" last week, now live in Beta.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93133",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787248259198809",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "TRD AI: auto-fill the Tax Summary",
+      "desc": "AI can now pull payment, refund, and estimated-payment figures straight from the return into the TRD Tax Summary, instead of firms entering each number by hand. This is the other AI teaser from last week's TRD update, now live in Beta.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93134",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "TRD AI: first-time walkthrough and feedback widget",
+      "desc": "Alongside the new TRD AI features, firms now get a first-time launch walkthrough explaining what the AI does, plus a quick way to leave feedback on AI results right inside TRD.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93136",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "TaxDome Payments: payout-based deposit mapping",
+      "desc": "For firms using TaxDome Payments, deposit syncing can now follow the actual Stripe payout and its own account mapping, rather than assuming a single deposit maps to a single account \u2014 building on the Payout Reconciliation Report from a couple weeks back.",
+      "link": "https://taxdome.atlassian.net/browse/TD-78984",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787590770461859",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: fix a disapproved return without rebuilding it",
+      "desc": "When a client disapproves a Tax Return Delivery, firms currently have to build a whole new TRD from scratch. This is exploring a lighter way to correct and re-send just what needs fixing.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1984",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: choose exactly who has to approve",
+      "desc": "Right now, any contact with portal access can approve a Tax Return Delivery. This would let firms designate one specific approver instead.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1983",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: require clients to confirm they reviewed a return before signing",
+      "desc": "Exploring an explicit \"I've reviewed this\" confirmation step before e-signature, instead of relying on the signature itself as the only sign a client actually looked at the return.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1767",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A prebuilt Billing Monitor dashboard",
+      "desc": "A ready-made dashboard for reviewing cash received, posted revenue, and what clients still owe \u2014 built for firm owners who currently export payments and AR to Excel to get this picture.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1849",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Affirm or Klarna as a pay-over-time option",
+      "desc": "Exploring adding a Buy Now, Pay Later option like Affirm or Klarna to TaxDome Payments, to make it easier for clients to pay larger invoices.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1749",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from clients' existing documents",
+      "desc": "Instead of building each client's document checklist by hand, this would generate checklists in bulk straight from documents clients have already uploaded.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1979",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from a CSV",
+      "desc": "Firms with a lot of clients to onboard at once would be able to generate document checklists for all of them in bulk from a CSV file, instead of one account at a time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1889",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: more reliable Drive syncing",
+      "desc": "Ongoing work to make the Desktop app's Drive syncing more trustworthy, with clearer status and error messages when a sync fails instead of files just going missing quietly.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1810",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: keeping up with high-volume tax prep firms",
+      "desc": "Speed and bulk-upload improvements aimed at firms that process a high volume of returns, so the Desktop app doesn't slow them down during peak season.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1806",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season instead of losing all that context and rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More than one checklist per client",
+      "desc": "Today a new checklist overwrites the old one. This would let a firm keep several checklists per client at once \u2014 for example, one per tax type.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1734",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Sign and pay recurring invoices on the client's behalf",
+      "desc": "Firms would be able to sign and pay a recurring invoice for a client directly from the firm portal, instead of waiting on the client \u2014 aimed at cutting payment delays on retainer-based work.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1719",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Group the Jobs page by pipeline or stage",
+      "desc": "A grouped view of the Jobs page \u2014 by pipeline or by stage \u2014 so admins can spot where work is piling up without scrolling or filtering stage by stage.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1685",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Take in-person card payments with a connected terminal",
+      "desc": "Firms with walk-in clients would be able to charge a card directly from the invoice using a card reader, instead of recording payments manually or texting a payment link during an office visit.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1060",
+      "demo": null,
+      "quarter": "Now",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk print and download invoices",
+      "desc": "Printing or downloading many invoices at once (as a ZIP) instead of opening and handling each one individually at the end of a billing cycle.",
+      "link": "https://taxdome.atlassian.net/browse/TX-269",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recurring invoice signing could double-charge a client and drop the last payment",
+      "desc": "For firms in timezones well east of the US, signing a proposal with a same-day recurring invoice could charge the client twice on signing day and quietly skip the final payment in the schedule. Fixed so each signing produces exactly one charge and the full schedule is billed correctly.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97942",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Clients couldn't pay a partially-paid invoice from the \"Pay invoice\" email link",
+      "desc": "If part of an invoice was already covered by a credit or partial payment, the guest payment link from the invoice email showed the balance due but offered no way to actually pay it \u2014 clients had to log in instead. Fixed so the payment form shows up for the remaining balance.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97750",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Recurring invoice bills could fail to generate after a proposal was signed",
+      "desc": "A mismatch in how recurring invoice amounts were checked could cause the first bill to fail generating right after a client signed the proposal, leaving the signing incomplete. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91904",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Signed documents with a certificate appeared blank in Adobe Acrobat",
+      "desc": "A signed document downloaded with its signature certificate (the firm's proof-of-signature record) displayed correctly in a browser but showed blank with an error when opened in Adobe Acrobat \u2014 the standard PDF tool most firms rely on for archiving. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98196",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Client folder uploads with special characters in the name failed silently",
+      "desc": "If a client tried to upload a folder whose name contained a character like / ? * : or <, the upload just failed with no explanation on the client portal \u2014 the error only showed up in the browser console. Now clients see a clear message explaining which characters aren't allowed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-85920",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "QuickBooks Online sync could silently undo a firm's transaction reviews",
+      "desc": "Re-importing transactions from QuickBooks Online could reset a transaction's review status back to \"Needs review\" even after a firm had already reviewed it \u2014 quietly erasing that work. Fixed so re-imports no longer overwrite review status.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97981",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "TRD could tell a client \"Thanks for signing\" when they hadn't signed",
+      "desc": "When approving and signing a Tax Return Delivery were split between two different people on the same account, the person who only approved it could land on a final screen thanking them for signing \u2014 even though they never did. Fixed so the message matches what that person actually did.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97853",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Confusing \"already taken\" error after a failed account creation",
+      "desc": "If creating a new client account hit a server error right after it was actually saved, retrying showed a bare \"has already been taken\" message with no context \u2014 leaving firms thinking their input was invalid, when the account had in fact already been created on the first try.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94986",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Desktop: Configure & Send in one pass", "votes": 0},
+    {"label": "TRD AI: auto-fill Tax Summary (Beta)", "votes": 0},
+    {"label": "TRD AI: auto-group pages (Beta)", "votes": 0}
+  ],
+  "mystery": "Two of last week's TRD \u2018Coming soon\u2019 teasers \u2014 AI page grouping and AI Tax Summary \u2014 just graduated into Beta this week. The third, AI signature placement, is still cooking."
+}

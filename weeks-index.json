@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-08-17.json",
+  "current": "data-2026-08-24.json",
   "archive": [
+    {
+      "id": "2026-08-17",
+      "file": "data-2026-08-17.json",
+      "range": "Aug 17\u201324, 2026",
+      "summary": "Password confirmation is now required before setting up 2FA on the web, Tax Return Delivery graduated out of Beta (with four AI \u2018Coming soon\u2019 teasers appearing in its place), and the Coming Soon board launched with seven upcoming TRD, payments, and QuickBooks items \u2014 alongside 12 bug fixes including a broken Print-to-TaxDome after a Windows update and a job stage that could silently revert.",
+      "tag": "27 shipped"
+    },
     {
       "id": "2026-08-10",
       "file": "data-2026-08-10.json",
