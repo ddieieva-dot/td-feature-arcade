@@ -53,24 +53,6 @@
       "reacts": {}
     },
     {
-      "cat": "new",
-      "text": "Clients can now pay one-time invoices with Klarna or Affirm in the mobile app",
-      "desc": "The client mobile app adds Klarna and Affirm as buy-now-pay-later options for one-time invoices, giving clients a way to spread out a larger payment instead of paying the full amount up front.",
-      "link": "https://taxdome.atlassian.net/browse/TMAPP-4063",
-      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787735158392599",
-      "quarter": null,
-      "reacts": {}
-    },
-    {
-      "cat": "new",
-      "text": "Klarna/Affirm now list below other payment options in the mobile app",
-      "desc": "In the client mobile app's payment method picker, Klarna and Affirm now appear below cards and bank options instead of mixed in with them, so the more common payment methods are easier to find first.",
-      "link": "https://taxdome.atlassian.net/browse/TMAPP-4357",
-      "demo": null,
-      "quarter": null,
-      "reacts": {}
-    },
-    {
       "cat": "beta",
       "text": "TRD AI: review AI results, handle conflicts, and cancel processing",
       "desc": "Building on last week's AI page-grouping and Tax Summary auto-fill, firms in the beta can now review the AI's results, resolve amount conflicts, suggest corrections, and cancel AI processing partway through — all before the return goes out to the client.",
