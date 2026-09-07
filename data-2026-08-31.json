@@ -1,0 +1,296 @@
+{
+  "weekLabel": "Aug 31–Sep 7, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "Firms can now agree and pay a recurring invoice for a client. I've been agreeing to walks on my owner's behalf for years.",
+    "Invoices print in bulk now, no more one-by-one trips to the printer. I still fetch the newspaper one page at a time, out of principle.",
+    "Card readers can now take a payment right at the counter. I take treats right at the counter too — no card required.",
+    "Inbox+ gave mentions their own folder. I've had a 'squeaky toys only' pile since day one."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Firms can agree to and pay a recurring invoice on the client's behalf",
+      "desc": "If a client has already given verbal or written authorization, a firm member can now activate a pending recurring invoice, pick the client's saved payment method (or add a new one), and pay the first bill without waiting on the client to sign. Future bills keep going out automatically through the usual autopay schedule.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95353",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788203250290889",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Inbox+ gets folder-style navigation, a dedicated Mentions folder, and one-click notification settings",
+      "desc": "The old toggle between the main list and the archive is gone — the left side now works like folders you pick between instead of switching back and forth. Mentions get their own folder with a counter instead of getting buried in the general feed, and the link to your notification settings now sits right inside Inbox+ instead of hiding in your profile.",
+      "link": "https://taxdome.atlassian.net/browse/TD-80095",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Print or download many invoices at once",
+      "desc": "Select multiple invoices — current, unpaid, overdue, or paid — and print or download them all in a single file instead of opening each one individually. Up to 50 invoices generate instantly; larger batches (up to 5,000) get emailed as a download link once they're ready.",
+      "link": "https://taxdome.atlassian.net/browse/TD-45859",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788419110378629",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "See exactly which template an automation step points to, before you commit",
+      "desc": "When setting up a pipeline automation, every template dropdown now has a link to open that template — including the one already selected — so you can check its contents without leaving the automation settings and hunting through the Templates section.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90725",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788349196783479",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Recurring invoices list now shows who initiated each payment",
+      "desc": "The Recurring invoices list has a new \"Initiated by\" column, showing whether a team member paid on the client's behalf or the client paid themselves — the same visibility already added to the regular Payments list a couple of weeks ago.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97576",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Clients can now pay one-time invoices with Klarna or Affirm in the mobile app",
+      "desc": "The client mobile app adds Klarna and Affirm as buy-now-pay-later options for one-time invoices, giving clients a way to spread out a larger payment instead of paying the full amount up front.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4063",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787735158392599",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Klarna/Affirm now list below other payment options in the mobile app",
+      "desc": "In the client mobile app's payment method picker, Klarna and Affirm now appear below cards and bank options instead of mixed in with them, so the more common payment methods are easier to find first.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4357",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "TRD AI: review AI results, handle conflicts, and cancel processing",
+      "desc": "Building on last week's AI page-grouping and Tax Summary auto-fill, firms in the beta can now review the AI's results, resolve amount conflicts, suggest corrections, and cancel AI processing partway through — all before the return goes out to the client.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93135",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Tax Return Delivery: client approval step",
+      "desc": "A new approval step lets firms require a client to explicitly confirm they've reviewed a tax return before signing it, instead of treating the signature itself as the only proof of review. Includes the client mobile app experience for approving, requesting changes, and tracking status.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92220",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "gradual",
+      "text": "Charge walk-in clients directly with a connected card reader",
+      "desc": "Firms with a Stripe card reader can now charge a client's card right at the counter from inside TaxDome — the invoice is marked paid automatically, with no manual \"record offline payment\" step, no QR code, and no hand-typing a card number. Rolling out gradually to eligible US firms on TaxDome Payments.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96031",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788280585280759",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: fix a disapproved return without rebuilding it",
+      "desc": "When a client disapproves a Tax Return Delivery, firms currently have to build a whole new TRD from scratch. This is exploring a lighter way to correct and re-send just what needs fixing.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1984",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: choose exactly who has to approve",
+      "desc": "Right now, any contact with portal access can approve a Tax Return Delivery. This would let firms designate one specific approver instead.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1983",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: require clients to confirm they reviewed a return before signing",
+      "desc": "Exploring an explicit \"I've reviewed this\" confirmation step before e-signature, instead of relying on the signature itself as the only sign a client actually looked at the return.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1767",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A prebuilt Billing Monitor dashboard",
+      "desc": "A ready-made dashboard for reviewing cash received, posted revenue, and what clients still owe — built for firm owners who currently export payments and AR to Excel to get this picture.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1849",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Affirm or Klarna as a pay-over-time option",
+      "desc": "Exploring adding a Buy Now, Pay Later option like Affirm or Klarna to TaxDome Payments more broadly, to make it easier for clients to pay larger invoices.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1749",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from clients' existing documents",
+      "desc": "Instead of building each client's document checklist by hand, this would generate checklists in bulk straight from documents clients have already uploaded.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1979",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from a CSV",
+      "desc": "Firms with a lot of clients to onboard at once would be able to generate document checklists for all of them in bulk from a CSV file, instead of one account at a time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1889",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: more reliable Drive syncing",
+      "desc": "Ongoing work to make the Desktop app's Drive syncing more trustworthy, with clearer status and error messages when a sync fails instead of files just going missing quietly.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1810",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: keeping up with high-volume tax prep firms",
+      "desc": "Speed and bulk-upload improvements aimed at firms that process a high volume of returns, so the Desktop app doesn't slow them down during peak season.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1806",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season instead of losing all that context and rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More than one checklist per client",
+      "desc": "Today a new checklist overwrites the old one. This would let a firm keep several checklists per client at once — for example, one per tax type.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1734",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Group the Jobs page by pipeline or stage",
+      "desc": "A grouped view of the Jobs page — by pipeline or by stage — so admins can spot where work is piling up without scrolling or filtering stage by stage.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1685",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a stale \"sign\" link for an already-activated recurring invoice sent clients to a confusing access screen",
+      "desc": "If a firm activated a recurring invoice on the client's behalf after a sign-request email had already gone out, clicking the old email link showed the client a \"you need access\" screen instead of the invoice. It now opens the invoice normally.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98258",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: firm inbox notification credited the client, not the employee, for an on-behalf activation",
+      "desc": "When a firm member activated a recurring invoice on the client's behalf, the notification in the assignee's Inbox+ said the client had accepted it — even though the client never touched it. It now names the firm member who actually did it.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98437",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: legacy Stripe firms could see a QuickBooks sync setting meant only for TaxDome Payments",
+      "desc": "US firms still on legacy Stripe (not TaxDome Payments) were seeing the payout-based deposit sync option on the QuickBooks integration settings, even though it doesn't apply to them. It's now hidden for those firms.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98988",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: toggling fullscreen in the document viewer no longer re-downloads the whole PDF or loses your zoom level",
+      "desc": "Switching in and out of fullscreen on a large PDF used to re-download the entire file every time, and leaving fullscreen with Escape could leave the page zoomed in and cut off. Both are fixed — fullscreen now just resizes the view.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97919",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: some autopay proposals with a future-dated bill let clients sign without a payment method",
+      "desc": "A proposal with an autopay package could skip asking for a payment method when its first bill was scheduled for a future date, instead of always requiring one the way autopay is supposed to. Fixed so autopay proposals always require a payment method before signing.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4185",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: employees could edit another firm member's signer name and email",
+      "desc": "In a Tax Return Delivery or signature request, a firm member could see and edit the name and email of another owner or employee acting as a signer, as if they were an unregistered guest. Firm members' details are now locked, since they come from their own profile.",
+      "link": "https://taxdome.atlassian.net/browse/TD-88032",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: the Print button silently did nothing for PDFs in Chrome and Edge",
+      "desc": "Clicking Print on a PDF document could fail with no dialog and no error message in Chrome or Edge, due to how those browsers changed their built-in PDF viewer. Printing now works reliably again.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94118",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: the client mobile app could crash when retrying a document scan",
+      "desc": "Tapping Retry after scanning a document in the client mobile app could crash the app instead of letting the client rescan. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-3481",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {
+      "label": "Agree and pay on behalf for recurring invoices",
+      "votes": 0
+    },
+    {
+      "label": "Pay on terminal — in-person card payments (Gradual release)",
+      "votes": 0
+    },
+    {
+      "label": "Inbox+ v1.1: folder-style navigation",
+      "votes": 0
+    }
+  ],
+  "mystery": "Three things that sat in Coming Soon last week just graduated for real: sign-and-pay-on-behalf, the in-person card reader, and bulk invoice printing. The Coming Soon board is now three items lighter."
+}

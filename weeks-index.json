@@ -1,52 +1,59 @@
 {
-  "current": "data-2026-08-24.json",
+  "current": "data-2026-08-31.json",
   "archive": [
+    {
+      "id": "2026-08-24",
+      "file": "data-2026-08-24.json",
+      "range": "Aug 24–31, 2026",
+      "summary": "Desktop's new Configure & Send bundled link/lock/approval/signature into one pass, TRD AI graduated into Beta for automatic page grouping and Tax Summary auto-fill, and the Coming Soon board added a Billing Monitor dashboard and BNPL payments — alongside 8 bug fixes including a recurring-invoice double-charge on signing day and signed documents appearing blank in Adobe Acrobat.",
+      "tag": "30 shipped"
+    },
     {
       "id": "2026-08-17",
       "file": "data-2026-08-17.json",
-      "range": "Aug 17\u201324, 2026",
-      "summary": "Password confirmation is now required before setting up 2FA on the web, Tax Return Delivery graduated out of Beta (with four AI \u2018Coming soon\u2019 teasers appearing in its place), and the Coming Soon board launched with seven upcoming TRD, payments, and QuickBooks items \u2014 alongside 12 bug fixes including a broken Print-to-TaxDome after a Windows update and a job stage that could silently revert.",
+      "range": "Aug 17–24, 2026",
+      "summary": "Password confirmation is now required before setting up 2FA on the web, Tax Return Delivery graduated out of Beta (with four AI ‘Coming soon’ teasers appearing in its place), and the Coming Soon board launched with seven upcoming TRD, payments, and QuickBooks items — alongside 12 bug fixes including a broken Print-to-TaxDome after a Windows update and a job stage that could silently revert.",
       "tag": "27 shipped"
     },
     {
       "id": "2026-08-10",
       "file": "data-2026-08-10.json",
-      "range": "Aug 10\u201317, 2026",
-      "summary": "The client Overview page got a three-part redesign, clients gained Apple Pay and Google Pay checkout, invoices can now be saved as drafts, and a new Payout Reconciliation Report shipped \u2014 alongside 6 new billing features and 7 bug fixes including two Tax Return Delivery approval bugs and a migration tool that silently dropped .zip files.",
+      "range": "Aug 10–17, 2026",
+      "summary": "The client Overview page got a three-part redesign, clients gained Apple Pay and Google Pay checkout, invoices can now be saved as drafts, and a new Payout Reconciliation Report shipped — alongside 6 new billing features and 7 bug fixes including two Tax Return Delivery approval bugs and a migration tool that silently dropped .zip files.",
       "tag": "21 shipped"
     },
     {
       "id": "2026-08-03",
       "file": "data-2026-08-03.json",
-      "range": "Aug 3\u201310, 2026",
-      "summary": "Pipeline sorting got more useful fields including Intake Date, email threads gained a read/unread filter, and Inbox+ notification cleanup entered beta \u2014 alongside 7 bug fixes including recurring invoices marking themselves \"Completed\" too early and $0 invoices finally payable from the mobile app.",
+      "range": "Aug 3–10, 2026",
+      "summary": "Pipeline sorting got more useful fields including Intake Date, email threads gained a read/unread filter, and Inbox+ notification cleanup entered beta — alongside 7 bug fixes including recurring invoices marking themselves \"Completed\" too early and $0 invoices finally payable from the mobile app.",
       "tag": "10 shipped"
     },
     {
       "id": "2026-07-27",
       "file": "data-2026-07-27.json",
-      "range": "Jul 27\u2013Aug 3, 2026",
-      "summary": "Kiosk Mode let clients fill out organizers right on an office tablet, and firms got a heads-up email ahead of monthly/seasonal seat renewals \u2014 alongside 8 bug fixes including a closed QuickBooks security gap, invoices that were getting stuck before reaching QuickBooks, and a payment-method deletion warning for linked recurring invoices.",
+      "range": "Jul 27–Aug 3, 2026",
+      "summary": "Kiosk Mode let clients fill out organizers right on an office tablet, and firms got a heads-up email ahead of monthly/seasonal seat renewals — alongside 8 bug fixes including a closed QuickBooks security gap, invoices that were getting stuck before reaching QuickBooks, and a payment-method deletion warning for linked recurring invoices.",
       "tag": "10 shipped"
     },
     {
       "id": "2026-07-20",
       "file": "data-2026-07-20.json",
-      "range": "Jul 20\u201327, 2026",
-      "summary": "Payment method restrictions, scheduled bulk client-chat messages, and the redesigned CRM import all reached full release, Work Forecaster job-health indicators entered beta, and the Desktop app started warning about printer setup problems \u2014 alongside 8 bug fixes including Klarna/Affirm display issues and job date filters using the wrong timezone.",
+      "range": "Jul 20–27, 2026",
+      "summary": "Payment method restrictions, scheduled bulk client-chat messages, and the redesigned CRM import all reached full release, Work Forecaster job-health indicators entered beta, and the Desktop app started warning about printer setup problems — alongside 8 bug fixes including Klarna/Affirm display issues and job date filters using the wrong timezone.",
       "tag": "16 shipped"
     },
     {
       "id": "2026-07-13",
       "file": "data-2026-07-13.json",
-      "range": "Jul 13\u201317, 2026",
-      "summary": "Automatic pricing-update emails rolled out for special-rate firms, jobs could be assigned by role instead of by name, drag-and-drop returned to the Desktop app's Upload Window, and Payment Method Restrictions entered beta \u2014 alongside 8 bug fixes including a 2FA login crash and payment methods getting wiped mid-billing.",
+      "range": "Jul 13–17, 2026",
+      "summary": "Automatic pricing-update emails rolled out for special-rate firms, jobs could be assigned by role instead of by name, drag-and-drop returned to the Desktop app's Upload Window, and Payment Method Restrictions entered beta — alongside 8 bug fixes including a 2FA login crash and payment methods getting wiped mid-billing.",
       "tag": "13 shipped"
     },
     {
       "id": "2026-07-06",
       "file": "data-2026-07-06.json",
-      "range": "Jul 6\u201310, 2026",
+      "range": "Jul 6–10, 2026",
       "summary": "Firms got the ability to charge clients' saved payment methods directly, plus beta features for scheduling bulk client-chat messages and smoother CRM imports, alongside 23 bug fixes including a Stripe reconciliation issue and documents stuck in \"Sending.\"",
       "tag": "31 shipped"
     }
