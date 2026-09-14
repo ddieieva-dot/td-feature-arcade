@@ -1,0 +1,269 @@
+{
+  "weekLabel": "Sep 7\u201314, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "I never forget where I buried last year's bone. Checklists can finally carry over into a new season too.",
+    "I keep a leash pile AND a toy pile going without mixing them up. Clients can now hold more than one checklist too.",
+    "Old habits don't get grandfathered in forever \u2014 just ask any Desktop app still stuck before 4.8.1, now locked out for good.",
+    "I like my toys sorted into neat little piles. The Jobs page can now group itself by pipeline or stage, no sniffing required."
+  ],
+  "items": [
+    {
+      "cat": "beta",
+      "text": "Reusable checklist templates for the whole firm",
+      "desc": "Firms can now build named checklist templates \u2014 with a type, cadence, and document items \u2014 from a new Checklist templates tab in Settings, instead of rebuilding the same checklist from scratch for every client. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-89701",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1785338625824849",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "A dedicated Checklists tab on the client Account page \u2014 and room for more than one checklist",
+      "desc": "Client accounts now have an Organizers and checklists tab with separate Organizers and Checklists sub-tabs, where checklists can be created, edited, and deleted directly. This also lifts the old one-checklist-per-client limit, so a client can hold more than one checklist at a time \u2014 for example, one per tax type. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90426",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1784208385541419",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Roll a client's checklist forward into a new period",
+      "desc": "A new Roll over option lets firms carry a client's existing checklist items into a new checklist instead of rebuilding it by hand \u2014 available when creating or editing a checklist, and through pipeline automation. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-91800",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788531715008599",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Roll over checklists when creating an organizer or bulk-importing",
+      "desc": "The Roll over option is now also available where organizers get created \u2014 including for many client accounts at once \u2014 and bulk CSV/Excel imports gained a Rollover column, so firms don't have to open every account individually to carry a checklist forward. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97241",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Organizer automation now attaches the right checklist automatically \u2014 and can AI-generate one",
+      "desc": "When an organizer is created, either manually or through pipeline automation, TaxDome can now automatically work out and attach the matching checklist \u2014 reusing an existing one, rolling one forward, or creating one from a template \u2014 and can even generate checklist items straight from an uploaded 1040 with AI. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92788",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787834235358609",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "One clear notification after any bulk checklist operation",
+      "desc": "Rolling checklists forward, creating them from a template, or bulk-importing them now all produce the same kind of Inbox+ notification \u2014 showing how many were created, updated, or skipped, with a downloadable CSV for the details. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97566",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788784209140309",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Group the Jobs page by pipeline or by stage",
+      "desc": "The Jobs page can now be grouped by pipeline or by stage, so admins can spot where work is piling up at a glance instead of filtering stage by stage. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-89865",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788434489814789",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Older Desktop app versions are now blocked from signing in",
+      "desc": "Desktop app versions from 4.1.0 up to (but not including) 4.8.1 had a bug that could send thousands of extra sync requests per hour. Those versions can no longer sign in, closing a loophole where the earlier force-update banner could be dismissed and ignored \u2014 so anyone still on an old version now needs to update to keep using the Desktop app.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99198",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Find AI form-exclusion settings right from Groups",
+      "desc": "Firms using AI Groups can now jump straight to the form-exclusion preference settings from inside Groups itself, instead of hunting for them elsewhere \u2014 making it easier to stop the same forms from being pulled in automatically.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98465",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: fix a disapproved return without rebuilding it",
+      "desc": "When a client disapproves a Tax Return Delivery, firms currently have to build a whole new TRD from scratch. This is exploring a lighter way to correct and re-send just what needs fixing.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1984",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: choose exactly who has to approve",
+      "desc": "Right now, any contact with portal access can approve a Tax Return Delivery. This would let firms designate one specific approver instead.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1983",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: require clients to confirm they reviewed a return before signing",
+      "desc": "Exploring an explicit \"I've reviewed this\" confirmation step before e-signature, instead of relying on the signature itself as the only sign a client actually looked at the return.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1767",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A prebuilt Billing Monitor dashboard",
+      "desc": "A ready-made dashboard for reviewing cash received, posted revenue, and what clients still owe \u2014 built for firm owners who currently export payments and AR to Excel to get this picture.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1849",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Employee cost rate",
+      "desc": "Firms would be able to set a cost rate per employee and see job and client profitability right inside TaxDome, instead of exporting data and calculating margins by hand in spreadsheets.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1894",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Affirm or Klarna as a pay-over-time option",
+      "desc": "Exploring adding a Buy Now, Pay Later option like Affirm or Klarna to TaxDome Payments, to make it easier for clients to pay larger invoices.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1749",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from clients' existing documents",
+      "desc": "Instead of building each client's document checklist by hand, this would generate checklists in bulk straight from documents clients have already uploaded.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1979",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from a CSV",
+      "desc": "Firms with a lot of clients to onboard at once would be able to generate document checklists for all of them in bulk from a CSV file, instead of one account at a time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1889",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: more reliable Drive syncing",
+      "desc": "Ongoing work to make the Desktop app's Drive syncing more trustworthy, with clearer status and error messages when a sync fails instead of files just going missing quietly.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1810",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: keeping up with high-volume tax prep firms",
+      "desc": "Speed and bulk-upload improvements aimed at firms that process a high volume of returns, so the Desktop app doesn't slow them down during peak season.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1806",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season instead of losing all that context and rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More than one checklist per client",
+      "desc": "Today a new checklist overwrites the old one. This would let a firm keep several checklists per client at once \u2014 for example, one per tax type.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1734",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: clients could sign an autopay proposal with no payment method attached",
+      "desc": "An unverified ACH bank account could be preselected on an autopay proposal and then silently removed before signing, letting a client complete signing with no payment method on file \u2014 leading to a confusing \"Problem with payment\" message later. Fixed so a payment method is always required before signing.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99259",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: the public sign-up page could fail with a server error",
+      "desc": "A specific type of request to TaxDome's public sign-up page could return a server error instead of completing sign-up. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99156",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: SMS two-factor setup could fail with a server error",
+      "desc": "Setting up SMS-based two-factor authentication from TaxDome's general app subdomain (rather than a firm's own subdomain) could fail with a server error instead of completing. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99405",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: one overly long file name could fail an entire document migration",
+      "desc": "During document migration, if just one file in an uploaded folder had a very long file path, the whole folder's import would fail with a generic \"Sync failed\" error and no indication of which file caused it. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98485",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: Portuguese (Brazil) language setting showed Norwegian text on some pages",
+      "desc": "Firm members who set their interface language to Portuguese (Brazil) saw parts of the portal \u2014 including Billing \u2014 displayed in Norwegian instead. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99812",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: an invoice created during document upload wasn't locked to that document",
+      "desc": "When a firm user created and linked an invoice while uploading a document, the document uploaded successfully but wasn't actually locked to that invoice \u2014 with no error shown \u2014 requiring a manual re-link afterward. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98869",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a kiosk-only signer could sign outside of Kiosk Mode",
+      "desc": "A signer meant only for in-office Kiosk Mode signing (someone with no email or login) could be used to sign a document even outside Kiosk Mode, bypassing the intended safeguard. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97963",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Checklist templates (Beta)", "votes": 0},
+    {"label": "Roll over checklists into a new period (Beta)", "votes": 0},
+    {"label": "Group Jobs by pipeline or stage (Beta)", "votes": 0}
+  ],
+  "mystery": "This week's raw Jira pull touched 208 tickets \u2014 most of it backend refactors, test-pyramid cleanup, and a marketing-site redesign that'll never show up here. The Coming Soon board is also one item lighter: \"Group the Jobs page by pipeline or stage\" just graduated into Beta this week."
+}

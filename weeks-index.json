@@ -1,10 +1,17 @@
 {
-  "current": "data-2026-08-31.json",
+  "current": "data-2026-09-07.json",
   "archive": [
+    {
+      "id": "2026-08-31",
+      "file": "data-2026-08-31.json",
+      "range": "Aug 31\u2013Sep 7, 2026",
+      "summary": "Firms could agree to and pay a recurring invoice on a client's behalf, Inbox+ got folder-style navigation with a dedicated Mentions folder, and invoices gained bulk print/download plus a gradually-rolling-out in-person card reader \u2014 alongside TRD's client approval step and AI review/conflict-handling entering Beta, and 8 bug fixes including a recurring-invoice double-charge on signing day and firm members being able to edit another employee's signer details.",
+      "tag": "16 shipped"
+    },
     {
       "id": "2026-08-24",
       "file": "data-2026-08-24.json",
-      "range": "Aug 24–31, 2026",
+      "range": "Aug 24\u201331, 2026",
       "summary": "Desktop's new Configure & Send bundled link/lock/approval/signature into one pass, TRD AI graduated into Beta for automatic page grouping and Tax Summary auto-fill, and the Coming Soon board added a Billing Monitor dashboard and BNPL payments — alongside 8 bug fixes including a recurring-invoice double-charge on signing day and signed documents appearing blank in Adobe Acrobat.",
       "tag": "30 shipped"
     },
