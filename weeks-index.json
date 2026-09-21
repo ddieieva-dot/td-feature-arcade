@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-09-07.json",
+  "current": "data-2026-09-14.json",
   "archive": [
+    {
+      "id": "2026-09-07",
+      "file": "data-2026-09-07.json",
+      "range": "Sep 7\u201314, 2026",
+      "summary": "A big N-Checklists rollout hit Beta \u2014 reusable checklist templates, a dedicated Checklists tab supporting more than one checklist per client, roll-forward and bulk-import options, and Jobs page grouping by pipeline or stage \u2014 alongside blocking outdated Desktop app versions from signing in and 7 bug fixes including a kiosk-only signer bypass and an autopay proposal that could be signed with no payment method attached.",
+      "tag": "16 shipped"
+    },
     {
       "id": "2026-08-31",
       "file": "data-2026-08-31.json",

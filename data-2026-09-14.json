@@ -1,0 +1,260 @@
+{
+  "weekLabel": "Sep 14\u201321, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "Firms can finally see what an employee costs per hour. I've always cost exactly one belly rub, flat rate, no negotiation.",
+    "Clients now have to say \"yes, I actually reviewed this\" before signing a tax return. I make that same face before agreeing to a bath.",
+    "You can print a proposal draft before anyone else sees it. I have never once let a treat leave the counter unsupervised either.",
+    "The Desktop app remembers you for 30 days straight. I remember exactly one thing for 30 days running: where the treats live."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Employee cost rate",
+      "desc": "Firms can now set an hourly cost rate for each team member, right alongside billing rates \u2014 the first step toward seeing true job and client profitability instead of just billed revenue. Rate changes never retroactively touch past time entries or invoices.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95754",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1789677918268279",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Tax Return Delivery: client approval step",
+      "desc": "Firms can now require a client to explicitly confirm they've reviewed a tax return before signing it, instead of treating the signature itself as the only proof of review \u2014 including the full client mobile app experience for approving, requesting changes, and tracking status. Fully released after several weeks in Beta.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92220",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Print and download proposals that are still in draft",
+      "desc": "Firms can now print or download a proposal before sending it \u2014 handy for an internal review or a sign-off round \u2014 instead of having to send it (and notify the client) just to get a PDF. A grey DRAFT stamp marks it clearly as not yet final.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97706",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1789382252798839",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Filter the Recurring invoices list",
+      "desc": "The Recurring invoices list now has real filters \u2014 status, payment collection method, whether a payment method is on file, amount, frequency and more \u2014 so firms can find stalled or attention-needed schedules without opening each one individually.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97653",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1789131983133009",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Automatically update a job's due date",
+      "desc": "Firm Admins can now set a rule so a job's due date updates automatically when it enters a specific pipeline stage or custom status \u2014 instead of updating deadlines by hand or reconfiguring the automation every year.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95413",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788523978733909",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Inbox+ shows your real notification count",
+      "desc": "The Inbox+ sidebar badge used to cap out at \"99+,\" hiding how many notifications were actually waiting for a firm with a large backlog. It now shows the exact total.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96742",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Desktop app: stay signed in for up to 30 days",
+      "desc": "On a trusted, single-user machine, firms can now turn on a setting that skips re-entering email, password and 2FA after a Windows restart, for up to 30 days at a time \u2014 instead of logging back in every time the computer restarts.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-3680",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Desktop app can auto-launch on Windows startup",
+      "desc": "Firms who use the Desktop app every day can now have it launch automatically when their computer starts, instead of opening it by hand each time.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-2208",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Faster /app/contacts page load",
+      "desc": "The Contacts page should load noticeably faster now, thanks to a round of performance fixes targeting the slowest parts of the page.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98911",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A prebuilt Billing Monitor dashboard",
+      "desc": "A ready-made dashboard for reviewing cash received, posted revenue, and what clients still owe \u2014 built for firm owners who currently export payments and AR to Excel to get this picture.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1849",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: choose where the invoice sits in the flow",
+      "desc": "Firms that don't lock documents to an invoice would be able to choose where the invoice shows up in a Tax Return Delivery \u2014 before the client views it, after the intro, or right before signing \u2014 instead of the current fixed placement that blocks the rest of the flow until it's paid.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1768",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: a clearer first-time setup screen",
+      "desc": "Exploring a clearer explanation of what the Tax Return Delivery flow does during first-time setup, so new users understand it and complete their first delivery instead of abandoning at an empty screen.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2094",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from clients' existing documents",
+      "desc": "Instead of building each client's document checklist by hand, this would generate checklists in bulk straight from documents clients have already uploaded.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1979",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from a CSV",
+      "desc": "Firms with a lot of clients to onboard at once would be able to generate document checklists for all of them in bulk from a CSV file, instead of one account at a time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1889",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: more reliable Drive syncing",
+      "desc": "Ongoing work to make the Desktop app's Drive syncing more trustworthy, with clearer status and error messages when a sync fails instead of files just going missing quietly.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1810",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: keeping up with high-volume tax prep firms",
+      "desc": "Speed and bulk-upload improvements aimed at firms that process a high volume of returns, so the Desktop app doesn't slow them down during peak season.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1806",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season instead of losing all that context and rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More than one checklist per client",
+      "desc": "Today a new checklist overwrites the old one. This would let a firm keep several checklists per client at once \u2014 for example, one per tax type.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1734",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Affirm or Klarna as a pay-over-time option",
+      "desc": "Exploring adding a Buy Now, Pay Later option like Affirm or Klarna to TaxDome Payments, to make it easier for clients to pay larger invoices.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1749",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: creating a Tax Return Delivery could fail with a 404",
+      "desc": "Trying to prepare a Tax Return Delivery from a document could fail outright with a 404 error instead of creating the return. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-100418",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a proposal saved as a draft before the client had a signer could never be signed",
+      "desc": "If a proposal was saved as a draft before its client contact had signing rights, the list of eligible signers got permanently locked in as empty \u2014 so even after the client later got login and signing rights, they could never actually sign it. Fixed so the signer list rebuilds correctly.",
+      "link": "https://taxdome.atlassian.net/browse/TD-100003",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: signed scanned documents could render blank except for the signature stamps",
+      "desc": "Scanned e-file authorization forms (like Form 8879) could come back showing nothing but the signature stamps after a client signed \u2014 the actual scanned content disappeared from view, even though the underlying file was intact. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98923",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: relative date shortcodes in scheduled emails resolved to the wrong period",
+      "desc": "A scheduled email using a shortcode like \"Last month\" or \"Last day\" resolved that date at the moment the email was scheduled, not when it actually sent \u2014 so a report or reminder could reference the wrong period entirely. Fixed to resolve at send time.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96841",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a signature request could go missing after an inactive contact was later activated",
+      "desc": "If a document was sent for signature to a contact who hadn't yet been activated, and that contact was activated afterward, the signature request never appeared in their to-do list \u2014 leaving them with no way to sign except through the original email. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-70362",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a scheduled invoice with \"pay with credits\" could lose its schedule and settle early",
+      "desc": "Editing a scheduled invoice that had \"pay with credits\" turned on could drop its future schedule entirely and immediately settle available credits against it, instead of waiting for its intended date. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99773",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: moving a document into a Private folder could silently unlink it from its job",
+      "desc": "Moving a document into a Private folder within the same client account could quietly disconnect it from the job and tasks it was linked to, with no warning. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98510",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a paid invoice's line items could show Tax = $0.00 while the invoice total stayed correct",
+      "desc": "Once an invoice with tax on a service line item was marked or recorded as Paid, that line's Tax column could reset to $0.00 in the invoice details view, even though the invoice's overall Total Tax stayed accurate. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99922",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {"label": "Employee cost rate", "votes": 0},
+    {"label": "Tax Return Delivery: client approval step", "votes": 0},
+    {"label": "Print & download draft proposals", "votes": 0}
+  ],
+  "mystery": "The Tax Return Delivery client approval step spent exactly 18 days in Beta \u2014 from Aug 31 to Sep 17 \u2014 before graduating to full release this week."
+}
