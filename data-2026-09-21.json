@@ -1,0 +1,260 @@
+{
+  "weekLabel": "Sep 21–28, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "Clients now choose when they pay in a Tax Return Delivery. I've always paid for dinner up front, in tail wags.",
+    "Affirm and Klarna let clients pay over time. I'm still paying off one stolen sock in guilty looks.",
+    "You can't delete a pipeline stage with jobs still in it. Same rule applies to my bed while I'm in it.",
+    "Pasted images stop vanishing from job descriptions. My tennis ball under the couch remains an open case."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Tax Return Delivery: choose when the client pays",
+      "desc": "Before, adding an invoice to a Tax Return Delivery locked the whole thing — clients couldn't even see the intro until they paid, so most firms simply left the invoice out. Now firms choose when payment happens: at the very start, right after the intro, or after the client reviews the return but before they sign.",
+      "link": "https://taxdome.atlassian.net/browse/TD-94285",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1789490575767979",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "One QuickBooks deposit per Stripe payout",
+      "desc": "For firms on TaxDome Payments with QuickBooks Online, each Stripe payout can now sync as a single QuickBooks deposit — with its payments, refunds, fees and adjustments inside — so it matches the one deposit that actually lands in the bank, instead of a pile of separate entries to reconcile by hand. Payments also show their Stripe Payout ID now, and you can search by it. Out of Beta and available to all.",
+      "link": "https://taxdome.atlassian.net/browse/TD-78984",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787590770461859",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Inbox+ cards no longer vanish when the linked item is deleted",
+      "desc": "Before, if a chat, task, document or invoice was deleted, its Inbox+ notification could disappear or lead to a broken page. Now the card stays and clearly shows that the linked item was removed, and one broken card no longer stops the rest of the feed from loading.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96658",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Faster Insights page",
+      "desc": "The Insights page should load noticeably faster now, especially on the first visit of the day.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99342",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Pipeline stages with jobs in them can't be deleted by accident",
+      "desc": "Firms can no longer delete a pipeline stage that still holds jobs, active or archived — TaxDome now blocks it, so jobs don't end up stranded without a stage.",
+      "link": "https://taxdome.atlassian.net/browse/TD-72039",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1789666493430629",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Affirm and Klarna: let clients pay over time",
+      "desc": "Clients of firms on TaxDome Payments can now split a larger invoice into smaller payments with Affirm or Klarna right at checkout, while the firm still gets paid up front. Firms in the beta get it switched on automatically. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90224",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1785364684174469",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Tax Return Delivery: a clearer setup layout for firms",
+      "desc": "The firm-side Tax Return Delivery screen has a redesigned layout that makes it clearer what the delivery flow does and what happens at each step, so first-time users aren't left staring at an empty screen wondering where to start. Limited rollout.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99340",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1789652168932799",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "gradual",
+      "text": "TRD AI: automatic page grouping and classification",
+      "desc": "The AI that sorts uploaded tax return pages for you (telling signature pages apart from payment vouchers, and grouping them) is moving out of Beta and rolling out gradually to more firms.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93133",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1787248259198809",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "gradual",
+      "text": "TRD AI: auto-fill the Tax Summary",
+      "desc": "AI that pulls payment, refund and estimated-payment figures straight from the return into the Tax Summary — instead of typing each number in by hand — is now rolling out gradually beyond the Beta group.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93134",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "gradual",
+      "text": "TRD AI: review results, fix conflicts, cancel processing",
+      "desc": "The tools for checking the AI's work before a return goes out — reviewing results, resolving amount conflicts, suggesting corrections, and cancelling processing partway — are rolling out gradually alongside the other TRD AI features.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93135",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "gradual",
+      "text": "TRD AI: first-time walkthrough and feedback",
+      "desc": "The first-time walkthrough explaining what TRD AI does, plus the quick way to leave feedback on AI results, is rolling out gradually together with the rest of TRD AI.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93136",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A prebuilt Billing Monitor dashboard",
+      "desc": "A ready-made dashboard for reviewing cash received, posted revenue, and what clients still owe — built for firm owners who currently export payments and AR to Excel to get this picture.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1849",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Heads-up on Stripe information requests before payouts pause",
+      "desc": "Stripe sometimes asks newly connected firms for extra details after setup, and firms often miss the email until their payouts are already on hold. This would move those requests into onboarding or show them right inside TaxDome, so payouts keep flowing.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2317",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from clients' existing documents",
+      "desc": "Instead of building each client's document checklist by hand, this would generate checklists in bulk straight from prior-year documents clients have already uploaded, with AI reading them.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1979",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bulk-create checklists from a spreadsheet",
+      "desc": "Firms with a lot of clients to onboard at once would be able to generate document checklists for all of them in bulk from a spreadsheet, instead of one account at a time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1889",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: the new version as smooth as the old one",
+      "desc": "Ongoing work to make sure firms moving to the new Desktop app can print, upload and use Drive just as reliably as before, so nobody feels the need to switch back to the old version.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1809",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season in one action instead of losing all that context and rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More than one checklist per client",
+      "desc": "Today a new checklist overwrites the old one. This would let a firm keep several checklists per client at once — for example, one per tax type and period.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1734",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: images pasted into job descriptions and templates could disappear",
+      "desc": "Images pasted into job descriptions, job templates, client-facing descriptions or job comments could quietly vanish later because they weren't being saved with the record — and cloned jobs could lose them too. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-100413",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: clients could still open a checklist after the firm deleted it",
+      "desc": "When a firm deleted a client's document checklist, the client could still view it from their side. Fixed so deleted checklists are no longer visible to clients.",
+      "link": "https://taxdome.atlassian.net/browse/TD-96482",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a team member's email saved on a client contact mixed up signer names",
+      "desc": "If a firm member's email was typed into a client contact's card, that person could show under the client contact's name on the signer list and signature certificate but under their own name in the audit trail — across every client, going forward. Fixed so everyone shows under their real name.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99417",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: removing an email from a contact left the old name on signers",
+      "desc": "After an email was removed from a client contact, signers using that email kept appearing under the old contact's name on the signer list, certificate and notifications — and that contact could still see those documents in Kiosk Mode. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99414",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: invoice Paid/Unpaid totals could be off by a cent",
+      "desc": "On invoices with tax on several lines, the Paid/Unpaid totals above the invoice list and the client's balance could differ by one cent from the amount actually charged. Fixed so the totals match.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99161",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: payout sync to QuickBooks could fail when a payout included an ACH payment",
+      "desc": "If a Stripe payout contained an ACH payment that was still processing, its QuickBooks deposit could fail for good instead of waiting and syncing once the payment cleared. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98680",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: the Recurring Jobs list could time out on large firms",
+      "desc": "For some team members at large firms, opening or searching the Recurring Jobs list could load for 30 seconds or more and then show an error. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95678",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: Desktop app could drop text from fillable forms printed twice",
+      "desc": "Printing the same file twice to the TaxDome printer before uploading could cause a conflict while converting it, and on fillable (XFA) tax forms the resulting PDF could come out missing text. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-2976",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {
+      "label": "TRD: choose when clients pay",
+      "votes": 0
+    },
+    {
+      "label": "Affirm & Klarna pay-over-time (Beta)",
+      "votes": 0
+    },
+    {
+      "label": "One QuickBooks deposit per Stripe payout",
+      "votes": 0
+    }
+  ],
+  "mystery": "Flexible invoice placement for Tax Return Delivery took the scenic route: Released on Sep 16, pulled back the next day, into Beta on Sep 21, and Released for real on Sep 23. Last week's Coming Soon teaser, done in a week."
+}

@@ -1,24 +1,31 @@
 {
-  "current": "data-2026-09-14.json",
+  "current": "data-2026-09-21.json",
   "archive": [
+    {
+      "id": "2026-09-14",
+      "file": "data-2026-09-14.json",
+      "range": "Sep 14–21, 2026",
+      "summary": "Employee cost rates arrived and Tax Return Delivery's client approval step graduated to full release, plus print/download for draft proposals, Recurring invoices filters, automatic job due-date updates, and Desktop stay-signed-in and auto-launch options — alongside 8 bug fixes including a TRD 404 on creation and signed scanned documents rendering blank.",
+      "tag": "17 shipped"
+    },
     {
       "id": "2026-09-07",
       "file": "data-2026-09-07.json",
-      "range": "Sep 7\u201314, 2026",
-      "summary": "A big N-Checklists rollout hit Beta \u2014 reusable checklist templates, a dedicated Checklists tab supporting more than one checklist per client, roll-forward and bulk-import options, and Jobs page grouping by pipeline or stage \u2014 alongside blocking outdated Desktop app versions from signing in and 7 bug fixes including a kiosk-only signer bypass and an autopay proposal that could be signed with no payment method attached.",
+      "range": "Sep 7–14, 2026",
+      "summary": "A big N-Checklists rollout hit Beta — reusable checklist templates, a dedicated Checklists tab supporting more than one checklist per client, roll-forward and bulk-import options, and Jobs page grouping by pipeline or stage — alongside blocking outdated Desktop app versions from signing in and 7 bug fixes including a kiosk-only signer bypass and an autopay proposal that could be signed with no payment method attached.",
       "tag": "16 shipped"
     },
     {
       "id": "2026-08-31",
       "file": "data-2026-08-31.json",
-      "range": "Aug 31\u2013Sep 7, 2026",
-      "summary": "Firms could agree to and pay a recurring invoice on a client's behalf, Inbox+ got folder-style navigation with a dedicated Mentions folder, and invoices gained bulk print/download plus a gradually-rolling-out in-person card reader \u2014 alongside TRD's client approval step and AI review/conflict-handling entering Beta, and 8 bug fixes including a recurring-invoice double-charge on signing day and firm members being able to edit another employee's signer details.",
+      "range": "Aug 31–Sep 7, 2026",
+      "summary": "Firms could agree to and pay a recurring invoice on a client's behalf, Inbox+ got folder-style navigation with a dedicated Mentions folder, and invoices gained bulk print/download plus a gradually-rolling-out in-person card reader — alongside TRD's client approval step and AI review/conflict-handling entering Beta, and 8 bug fixes including a recurring-invoice double-charge on signing day and firm members being able to edit another employee's signer details.",
       "tag": "16 shipped"
     },
     {
       "id": "2026-08-24",
       "file": "data-2026-08-24.json",
-      "range": "Aug 24\u201331, 2026",
+      "range": "Aug 24–31, 2026",
       "summary": "Desktop's new Configure & Send bundled link/lock/approval/signature into one pass, TRD AI graduated into Beta for automatic page grouping and Tax Summary auto-fill, and the Coming Soon board added a Billing Monitor dashboard and BNPL payments — alongside 8 bug fixes including a recurring-invoice double-charge on signing day and signed documents appearing blank in Adobe Acrobat.",
       "tag": "30 shipped"
     },
