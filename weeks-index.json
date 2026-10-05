@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-09-21.json",
+  "current": "data-2026-09-28.json",
   "archive": [
+    {
+      "id": "2026-09-21",
+      "file": "data-2026-09-21.json",
+      "range": "Sep 21–28, 2026",
+      "summary": "Tax Return Delivery let firms choose when clients pay and each Stripe payout began syncing to QuickBooks as one deposit, Affirm and Klarna pay-over-time and a clearer TRD layout entered Beta, and four TRD AI features started rolling out gradually — alongside 8 bug fixes including images vanishing from job descriptions and mixed-up signer names.",
+      "tag": "19 shipped"
+    },
     {
       "id": "2026-09-14",
       "file": "data-2026-09-14.json",

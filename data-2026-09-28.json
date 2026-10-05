@@ -1,0 +1,269 @@
+{
+  "weekLabel": "Sep 28–Oct 5, 2026 (through Mon 8am ET)",
+  "mascotLines": [
+    "The new Tax Return Delivery layout graduated from Beta in exactly one week. I've been in 'sit' Beta for six months.",
+    "New emails no longer go out to every client by accident. I also bark at just one mail carrier at a time.",
+    "Clients can't pay with an unconfirmed bank account anymore. I don't accept treats I haven't sniffed first, either.",
+    "Inbox+ links open in a new tab now, so you never lose your place. Squirrels, please take notes."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Tax Return Delivery's new layout is out of Beta",
+      "desc": "The redesigned firm-side Tax Return Delivery screen is now available to all: a clearer layout that explains what each step does, status badges, a step-by-step footer, and the jobs linked to the delivery in one place. On the Tax summary step you can also switch the viewer between just the Highlights or Payment voucher pages and the full return, and click an amount to jump to the page it came from.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99340",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1789652168932799",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Activity feed history for time entries, services and custom rates",
+      "desc": "The Activity feed now records what happens to time entries, services and custom rates — created, edited, billed, archived, deleted and more. Each of these also gets an Activity option in its menu that opens the history for just that item.",
+      "link": "https://taxdome.atlassian.net/browse/TD-47922",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1790960142063609",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Go to template button in pipeline automations",
+      "desc": "Automations that use a template (task, organizer, invoice, folder, proposal, wiki page or client request) now show a Go to template button right under the template picker, so you can jump straight to it without reopening the dropdown.",
+      "link": "https://taxdome.atlassian.net/browse/TD-98980",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1790600537782639?thread_ts=1788349196.783479&cid=C58FSFV0B",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Cost rate reminder for employees setting billing rates",
+      "desc": "Employees who manage billing rates now see a gentle note when a selected team member has no cost rate yet, suggesting they ask their firm admin or owner to add one so profitability can be calculated.",
+      "link": "https://taxdome.atlassian.net/browse/TD-100751",
+      "demo": "https://taxdome.slack.com/archives/C0AQJJ5MB43/p1790342266285009",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Inbox+ links always open in a new tab",
+      "desc": "Clicking a card in Inbox+ now always opens the linked chat, task, document or invoice in a new tab, so you never lose your place while working through Inbox+. Before, some cards opened in the same tab and some didn't.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93928",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "EU e-signatures: SPID, MitID and BankID kept working past Oct 1",
+      "desc": "Our e-signature provider is retiring some EU signing methods. For clients who sign with Italian SPID, Danish MitID or Swedish BankID, TaxDome has moved to the provider's replacement methods so signing keeps working — note these now produce an advanced (AES) e-signature rather than a qualified (QES) one, under new EU rules.",
+      "link": "https://taxdome.atlassian.net/browse/TD-93314",
+      "demo": "https://taxdome.slack.com/archives/C05SLGUMLS0/p1790583236411499?thread_ts=1783088376.472299&cid=C05SLGUMLS0",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Growth solutions: one Custom domain & website option",
+      "desc": "The Growth solutions pricing page now shows a single Custom domain & website option at $799 for US and Canadian firms. The $499 tier has been removed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99966",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1790777630036149",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Client app: unconfirmed bank accounts can't be used to pay",
+      "desc": "In the client mobile app, a bank account that's still waiting for confirmation is now clearly labeled and can't be picked to pay an invoice, prepay, or sign a proposal. Before, clients could sign with it, the charge would quietly fail, and nobody was told.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4371",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A prebuilt Billing Monitor dashboard",
+      "desc": "A ready-made dashboard showing cash received, posted revenue, and what clients still owe — built for firm owners who currently export payments and AR to Excel to get this picture. Now getting ready for Beta.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1849",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Checklists from your firm's own templates",
+      "desc": "Firms would be able to save their own checklist templates with items already filled in and apply them to a client, instead of typing out the list item by item every time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2334",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Checklists for a whole client book from a Drake backup",
+      "desc": "Upload one Drake backup and get personalized document checklists generated for matched individual clients in one go, instead of building them client by client. Starting as a small limited launch.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1986",
+      "demo": null,
+      "quarter": "Targeting early Oct 2026 (limited launch)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: signature fields placed for you",
+      "desc": "Automatically placing signature, date and initial fields on a Tax Return Delivery's signature pages (like Form 8879), instead of dragging each one in by hand for every signer.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1846",
+      "demo": null,
+      "quarter": "Q4'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: a heads-up when the client won't be notified",
+      "desc": "A warning at the moment you send a Tax Return Delivery if the client has notifications turned off, so you can reach them another way instead of the delivery sitting unseen.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2016",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Proposal expiration dates",
+      "desc": "Set an expiration date on a proposal so it can no longer be signed after the deadline, instead of tracking stale proposals and deleting them by hand.",
+      "link": "https://taxdome.atlassian.net/browse/TX-568",
+      "demo": null,
+      "quarter": "Q4'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Heads-up on Stripe information requests before payouts pause",
+      "desc": "Stripe sometimes asks newly connected firms for extra details after setup, and firms often miss the email until payouts are already on hold. This would move those requests into onboarding or show them right inside TaxDome, so payouts keep flowing.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2317",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: the new version as smooth as the old one",
+      "desc": "Ongoing work to make sure firms moving to the new Desktop app can print, upload and use Drive just as reliably as before, so nobody feels the need to switch back to the old version.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1809",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season in one action instead of rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More than one checklist per client",
+      "desc": "Letting a firm keep several checklists per client at once — for example, one per tax type and period — instead of a new checklist overwriting the old one.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1734",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: New email from a client's page could be addressed to every client",
+      "desc": "If you clicked New email on a client's Communication page before the page had finished loading, the email could be addressed to all of the firm's clients instead of just that one. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101702",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: some clients couldn't sign their tax return at all",
+      "desc": "Certain PDFs (often from some scanners or PDF editors) contain a small broken detail that's invisible on screen. When a client tried to sign a tax return made from one, every attempt failed with an error. Fixed, so these returns can be signed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-99743",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: client app uploads could get stuck on iPhone",
+      "desc": "On iOS, uploading a document from the client mobile app could hang at 0% or stall while converting the file. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4424",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: EU clients with the mobile app couldn't activate their account",
+      "desc": "For firms on TaxDome's EU servers, a client who already had the client app installed and tapped Activate account in their invitation email got an \"Invalid invitation link\" error and couldn't set a password. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4193",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: Inbox+ could go blank after a thread was unassigned",
+      "desc": "If a thread-assignment notification was sitting in Inbox+ and the thread's assignee was later removed, the whole Inbox+ page could fail to load. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101652",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: missing email alerts for incoming client texts",
+      "desc": "Team members who follow an account and can access it, but aren't assigned to it, got the Inbox+ notification for a new client SMS but not the email. Fixed, so nobody has to be assigned just to get the email.",
+      "link": "https://taxdome.atlassian.net/browse/TD-100492",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: QuickBooks payout deposit failed when a bank payment bounced",
+      "desc": "For firms syncing each Stripe payout to QuickBooks as one deposit, a payout that included an ACH payment the bank later returned could fail to sync at all, and the owner got an email to contact support. Fixed, so the deposit goes through with just the payments that actually succeeded.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101194",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: new TRD layout wouldn't send if signature pages had no fields",
+      "desc": "In the redesigned Tax Return Delivery, marking pages for signature without placing any signature fields blocked sending entirely. Placing fields is now optional, so firms that don't need an e-signature yet (or will add it later) can still send.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101197",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: email templates switched to HTML kept reverting",
+      "desc": "Switching an email template's editor from WYSIWYG to HTML and saving didn't stick — reopening it put it back in WYSIWYG. Fixed, so firms with custom-HTML branded emails can keep them in HTML mode.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101921",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {
+      "label": "New Tax Return Delivery layout (out of Beta)",
+      "votes": 0
+    },
+    {
+      "label": "Activity feed for time entries, services & rates",
+      "votes": 0
+    },
+    {
+      "label": "Go to template button in automations",
+      "votes": 0
+    }
+  ],
+  "mystery": "Monday morning's client mobile app update also quietly squashed about ten separate app crashes — in chat, the PDF viewer, document upload and more. None of them made the headline list, but your clients will feel it."
+}
