@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-09-28.json",
+  "current": "data-2026-10-05.json",
   "archive": [
+    {
+      "id": "2026-09-28",
+      "file": "data-2026-09-28.json",
+      "range": "Sep 28–Oct 5, 2026",
+      "summary": "Tax Return Delivery's new layout graduated out of Beta, the Activity feed started tracking time entries, services and custom rates, automations got a Go to template button, and Inbox+ links began always opening in a new tab — alongside 9 bug fixes including New email accidentally addressing every client and some clients being unable to sign their tax return.",
+      "tag": "17 shipped"
+    },
     {
       "id": "2026-09-21",
       "file": "data-2026-09-21.json",
