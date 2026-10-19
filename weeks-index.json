@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-10-05.json",
+  "current": "data-2026-10-12.json",
   "archive": [
+    {
+      "id": "2026-10-05",
+      "file": "data-2026-10-05.json",
+      "range": "Oct 5–12, 2026",
+      "summary": "US firms started taking card payments in person on a card reader, a new banner let firms mark jobs stuck in the last stage complete in one click, Jobs and Tasks began remembering filters, and the Billing Monitor dashboard entered Beta — alongside 9 bug fixes including QES signature requests clients couldn't sign and Desktop edits from Acrobat or Excel not reaching the web.",
+      "tag": "17 shipped"
+    },
     {
       "id": "2026-09-28",
       "file": "data-2026-09-28.json",
