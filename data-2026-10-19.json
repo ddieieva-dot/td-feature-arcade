@@ -1,0 +1,431 @@
+{
+  "weekLabel": "Oct 19–26, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "Work Forecaster flags overdue jobs now. I flag an overdue dinner the same way.",
+    "Clients can pay over time with Affirm and Klarna. I've been paying for treats in installments for years.",
+    "Signature fields place themselves now. Finally, someone else does the paw-printing.",
+    "Proposals can expire now. Treats on the floor have a three-second expiration date."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "Job health indicators at the top of the Jobs page",
+      "desc": "The Jobs page now shows clickable indicators — Overdue, Upcoming, Stage time limit exceeded, At risk, On track, Can't calculate and Done — so owners and admins can see at a glance what's late, what's coming up and what might miss its deadline, then click one to filter the table. A \"How it works\" link explains how each one is calculated. Before, you had to scan the table or build your own views to find out. Now out of Beta for everyone.",
+      "link": "https://taxdome.atlassian.net/browse/TD-54000",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1784131635553389",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Group jobs by pipeline or stage",
+      "desc": "On the Jobs page, firm admins can now group jobs by pipeline to see work across all pipelines at once, or by stage to spot where jobs are piling up. Before, you had to read through one long flat list. Now out of Beta for everyone.",
+      "link": "https://taxdome.atlassian.net/browse/TD-89865",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1788434489814789",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Clients can pay over time with Affirm and Klarna",
+      "desc": "Clients paying through TaxDome Payments can now choose Affirm or Klarna at checkout to spread a payment over time. Now out of Beta for everyone.",
+      "link": "https://taxdome.atlassian.net/browse/TD-90224",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1785364684174469",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Tax Return Delivery in the new Desktop app",
+      "desc": "The new Desktop app now includes the Tax Return Delivery flow, so firms can send returns for delivery without switching over to the web.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-2256",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Draft invoices now included in the invoices CSV export",
+      "desc": "Exporting one-time invoices to CSV now includes draft invoices, with Draft shown in the status column. Before, drafts were left out, so firms couldn't review prepared-but-unsent billing outside TaxDome.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101842",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Personalize Tax Return Delivery emails and intros with contact details",
+      "desc": "Firms can now add contact shortcodes (like contact name, first name or phone number) to a Tax Return Delivery's Email message and Intro. When the email message uses them, each active contact on the account gets their own \"Review tax return\" email, and the intro greets whoever opens it by name. Before, only account-level details could be inserted.",
+      "link": "https://taxdome.atlassian.net/browse/TD-104225",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Private Vimeo videos now play in the client app",
+      "desc": "Unlisted Vimeo videos, and ones limited to certain domains, now play in the client mobile app the same way they do on the web, including inside Tax Return Delivery, proposals and chats. If a video still can't load, the client now sees an error message instead of a blank dark screen.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4487",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Client app AI renaming now follows the AI add-on",
+      "desc": "In the client mobile app, AI document renaming (the \"We're renaming your docs\" message and banner) now only turns on for firms that have the AI add-on.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4626",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Saved Presets stay visible on Jobs and Tasks when filters are applied",
+      "desc": "Before, Presets disappeared as soon as any filter was applied, and since Jobs and Tasks now remember your last filters, that happened every time the page opened. Now Presets is always shown there, and picking one replaces the current filters with the preset's.",
+      "link": "https://taxdome.atlassian.net/browse/TD-104430",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1792773800066159",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Vimeo and Google Drive videos in the Tax Return Delivery intro",
+      "desc": "A Tax Return Delivery's intro video can now come from Vimeo or Google Drive, not just YouTube and Loom. That helps firms that limit a video to approved viewers because their walkthroughs show sensitive client data.",
+      "link": "https://taxdome.atlassian.net/browse/TD-95792",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Tax Return Delivery places signature fields for you",
+      "desc": "Automatically places signature, date and initial fields on a Tax Return Delivery's signature pages (like Form 8879), instead of dragging each one into place by hand for every signer.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97624",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1792421669001319",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "beta",
+      "text": "Set an expiration date on proposals",
+      "desc": "Firms can set an expiration date on a proposal when sending it (14 days by default, anywhere from 1 to 90). After that date the proposal can no longer be signed, and the proposals tables get an Expires column so firms can see and filter by it. Before, proposals stayed signable forever unless someone deleted them by hand.",
+      "link": "https://taxdome.atlassian.net/browse/TD-67887",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1793002055094239",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "An optional AI plan with a 14-day free trial",
+      "desc": "Firms would opt in to a paid AI plan ($200/month after a 14-day free trial) to keep using TaxDome's AI features such as Tax Return Delivery AI, AI renaming and the Atlas assistant.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2250",
+      "demo": null,
+      "quarter": "Launch was planned for Oct 19, 2026",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "New plan: bring the whole team, pay for the clients you serve",
+      "desc": "A plan that includes up to 20 team members and is priced by the clients you work with, instead of buying a licence for every person.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2261",
+      "demo": null,
+      "quarter": "Targeting Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Buy client capacity up front at a lower rate",
+      "desc": "Firms would be able to buy the client capacity they expect to need at purchase, at a better rate, instead of paying the top rate month by month as clients become active.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2263",
+      "demo": null,
+      "quarter": "Targeting Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A meter for how many clients count toward your plan",
+      "desc": "Shows how much of the firm's client allowance is already used and how fast it's filling, so the next bill isn't a surprise and extra capacity can be bought in time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2275",
+      "demo": null,
+      "quarter": "Targeting Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "See exactly what you'll be charged before paying",
+      "desc": "A clear breakdown of what's included and the total at checkout, so a firm's first bill matches what it agreed to.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2262",
+      "demo": null,
+      "quarter": "Targeting Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Monthly extra-client charges on a predictable day",
+      "desc": "Charges for clients above the plan's allowance would arrive on the same day each month with a clear explanation of what they're for.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2368",
+      "demo": null,
+      "quarter": "Targeting Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Create a task from any Inbox+ notification",
+      "desc": "Turn any Inbox+ item — including a chat — into a task in one click, for yourself or a teammate, instead of opening the client and creating the task by hand. Today this only works from emails.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2580",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Your own read/unread in Inbox+",
+      "desc": "See which notifications you personally haven't read yet, alongside the existing \"Archive for me,\" instead of archiving everything just to keep track.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2485",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Notifications that tell you more at a glance",
+      "desc": "Every Inbox+ notification would show the event, client, item and person responsible the same way, with room for long names, so you can decide what to do without opening it.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1905",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More Inbox+ folders: Clients, Mentions, Team, Platform, Issues",
+      "desc": "Notifications sorted into folders by type so you can go straight to what matters, instead of scanning one mixed feed.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1903",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Moving legacy Stripe firms onto TaxDome Payments",
+      "desc": "Helping firms still collecting through their own older Stripe connection switch to TaxDome Payments, with their clients' saved cards and autopay invoices moved over too.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2074",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bill each client at their own prices",
+      "desc": "Set per-client prices for services so proposals and invoices come out right automatically, instead of editing every one by hand or keeping prices in custom fields.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1733",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Send client documents to Instead from TaxDome",
+      "desc": "Firms that use Instead for tax planning would connect it in TaxDome and send a client's documents straight to it, instead of exporting and re-uploading them.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2162",
+      "demo": null,
+      "quarter": "Q4'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: save your usual settings and apply them in one click",
+      "desc": "Save a Tax Return Delivery's usual setup — reminders, approval, invoice statement, custom messages — once and reuse it, instead of toggling the same options for every return.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2120",
+      "demo": null,
+      "quarter": "Q3'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Checklists from your firm's own templates",
+      "desc": "Firms would be able to save their own checklist templates with items already filled in and apply them to a client, instead of typing out the list item by item every time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2334",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Checklists for a whole client book from a Drake backup",
+      "desc": "Upload one Drake backup and get personalized document checklists for matched individual clients in one go, instead of building them client by client. Starting as a small limited launch.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1986",
+      "demo": null,
+      "quarter": "Limited launch; quality check early Nov 2026",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Proposal expiration dates",
+      "desc": "Set an expiration date on a proposal so it can no longer be signed after the deadline, instead of tracking stale proposals and deleting them by hand.",
+      "link": "https://taxdome.atlassian.net/browse/TX-568",
+      "demo": null,
+      "quarter": "Q4'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Desktop app: the new version as smooth as the old one",
+      "desc": "Ongoing work to make sure firms moving to the new Desktop app can print, upload and use Drive just as reliably as before, so nobody feels the need to switch back to the old version.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1809",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season in one action instead of rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Kiosk payments go straight to the card reader assigned to that Kiosk",
+      "desc": "A payment started on an office Kiosk would go directly to the card reader the firm assigned to it, instead of a team member or client choosing the reader each time, so clients can pay at the Kiosk without anyone stepping in.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2441",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: clearer tax payment options",
+      "desc": "Clearer names for the tax payment method choices in Tax Return Delivery, and a corrected label on the client's side, so firms know which option fits each situation (like paying by voucher) and clients get the right instructions.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1830",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a security gap in Sign in with Apple",
+      "desc": "Sign in with Apple wasn't fully checking that the sign-in was meant for TaxDome. It does now.",
+      "link": "https://taxdome.atlassian.net/browse/TD-103290",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a security gap in Sign in with Google",
+      "desc": "The redirect after Google sign-in could pass the sign-in code on to a site it shouldn't. It now only sends people back to where they started signing in.",
+      "link": "https://taxdome.atlassian.net/browse/TD-103291",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: SMS threads could be read and sent from by employees not assigned to that client",
+      "desc": "An employee with access to at least one client (but not all clients) could open and send texts in other clients' SMS threads. Text messages now follow the same client-assignment rules as the thread list.",
+      "link": "https://taxdome.atlassian.net/browse/TD-103399",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: autopay proposals could finish with no payment method after a signer was removed",
+      "desc": "If the last person who hadn't signed yet was removed from a proposal (or lost signing rights), an autopay proposal could complete with no card on file, leaving the recurring invoice active but unable to charge. The proposal still completes, but the client now gets a \"Payment failed\" email and a banner to add a payment method, and autopay starts working once they do.",
+      "link": "https://taxdome.atlassian.net/browse/TD-103397",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: paying from the mobile app failed for clients with several accounts",
+      "desc": "Clients with more than one account at a firm could end up saving a card to the wrong account, so the payment never went through and they saw \"A processing error has occurred.\" Fixed for paying invoices; saving a new card still needs a small follow-up app update. Until then, the web client portal works.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105156",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: other contacts weren't notified after the TRD approver approved",
+      "desc": "In a Tax Return Delivery with a designated approver, nobody else on the account heard about it after the approver clicked Approve, so a second contact who still needed to sign never knew. Other contacts with notifications on now get notified.",
+      "link": "https://taxdome.atlassian.net/browse/TD-104011",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: deactivating an employee left their in-progress jobs with no assignee",
+      "desc": "In-progress jobs where the employee was the only assignee ended up with nobody, and completed jobs lost who did the work. Now such in-progress jobs go to the firm owner, and completed or archived jobs keep the employee as assignee so reporting still shows who did the work.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101232",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: quick repeated Excel saves left an older version on the Drive",
+      "desc": "In Desktop 4.13, saving an Excel file several times within a few seconds could leave an older version on the Drive and the web while the app said everything was synced. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-3914",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: saving Excel files to the TaxDome Drive was about 20x slower than saving locally",
+      "desc": "On the Desktop app, each Excel save to the Drive took around 8–9 seconds, against well under a second on a local disk. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TDAPP-3594",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: bulk email only filled in the first ~500 recipients",
+      "desc": "When selecting all accounts on a large firm's Accounts page and clicking Send email, the To field stopped at the first page of about 500 recipients. It now lists everyone once all pages have loaded.",
+      "link": "https://taxdome.atlassian.net/browse/TD-92143",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: invoices sent with \"send email\" off still pinged the client's phone",
+      "desc": "When an invoice was created with the automatic email turned off, the client got no email but still received the \"You've received an invoice\" mobile push. The push now follows the same setting.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105393",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: signature header showed the account name instead of the signer's name",
+      "desc": "A signed-in client opening the signing link from an email saw the account name (like \"Smith Family\") in the header instead of their own name, so with two signers it wasn't clear whose turn it was. The header now shows the contact's name, like Tax Return Delivery does.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105272",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {
+      "label": "Job health indicators on the Jobs page, now for everyone",
+      "votes": 0
+    },
+    {
+      "label": "Signature fields placed for you in Tax Return Delivery",
+      "votes": 0
+    },
+    {
+      "label": "Clients paying over time with Affirm and Klarna",
+      "votes": 0
+    }
+  ],
+  "mystery": "Two Coming Soon teasers from last week, TRD signature fields and proposal expiration dates, both reached Beta this week."
+}

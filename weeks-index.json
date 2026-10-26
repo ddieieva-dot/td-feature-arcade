@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-10-12.json",
+  "current": "data-2026-10-19.json",
   "archive": [
+    {
+      "id": "2026-10-12",
+      "file": "data-2026-10-12.json",
+      "range": "Oct 12–19, 2026",
+      "summary": "Firms could see exactly which Stripe account is connected and resolve Stripe's information requests without leaving TaxDome, Tax Return Delivery began warning when a client has notifications off, and PDF page edits saved with a single Save — alongside 9 bug fixes including TRD reminders continuing after a delivery went back to Draft and one broken notification blanking out the whole Inbox+ page.",
+      "tag": "15 shipped"
+    },
     {
       "id": "2026-10-05",
       "file": "data-2026-10-05.json",
