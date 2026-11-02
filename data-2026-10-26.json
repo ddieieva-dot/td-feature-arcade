@@ -1,0 +1,413 @@
+{
+  "weekLabel": "Oct 26–Nov 2, 2026 (through Mon 9am ET)",
+  "mascotLines": [
+    "Email threads can be linked to Jobs now. Every leash in this house is already linked to me.",
+    "Delivery templates remember your usual setup. Mine is one walk, two treats, zero baths.",
+    "New pricing counts clients, not seats. Good, because I already take up all the seats.",
+    "Two signers clicking at once used to lose a signature. Two squirrels at once still makes me lose my mind."
+  ],
+  "items": [
+    {
+      "cat": "released",
+      "text": "New pricing for new firms: one plan, priced by clients",
+      "desc": "TaxDome's new pricing is live for new firms. One plan replaces Essentials, Pro and Business, it includes up to 20 team members, and the price is based on how many active clients the firm serves instead of buying a seat for every person. Clients above the plan's allowance cost $15 each, seasonal seats are no longer sold, and Client Care is now sold separately. Prices for international firms were set up too.",
+      "link": "https://taxdome.atlassian.net/browse/TD-101764",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Link email threads to Jobs",
+      "desc": "Firms can link an email thread to a Job (or a Job to an email thread) and see the linked threads right in the Job preview, so email context stays with the work it belongs to. Now out of Beta for everyone.",
+      "link": "https://taxdome.atlassian.net/browse/TD-74391",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1786710288239619",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Tax Return Delivery templates",
+      "desc": "Firms can save their usual Tax Return Delivery setup as a template (managed in Settings) and apply it to a new delivery package in one go, including the invoice. Before, every delivery had to be set up option by option.",
+      "link": "https://taxdome.atlassian.net/browse/TD-100027",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1791983341731159",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Proposal expiration dates, now for everyone",
+      "desc": "Firms can set an expiration date when sending a proposal (14 days by default, anywhere from 1 to 90). After that date the proposal can't be signed and moves to Expired, and the firm can resend it with a new date. Now out of Beta for everyone.",
+      "link": "https://taxdome.atlassian.net/browse/TD-67887",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1793002055094239",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Client app follows where the firm placed the TRD invoice",
+      "desc": "In the client mobile app, a Tax Return Delivery's invoice now appears where the firm chose to put it: before the intro, after the intro, or just before signing, the same as on the web. Before, the app didn't follow that choice.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4338",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "released",
+      "text": "Firm app: Inbox+ cards for deleted items",
+      "desc": "In the firm mobile app, an Inbox+ notification whose linked item has been deleted now says so clearly, the link is no longer clickable, and the card can still be archived as usual.",
+      "link": "https://taxdome.atlassian.net/browse/TMAPP-4317",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Connect TaxDome to ChatGPT or Claude in one click",
+      "desc": "TaxDome is now listed in the official app catalogs of both ChatGPT and Claude, so the connect dialog has simple 'Add to ChatGPT' and 'Add to Claude' buttons with updated steps. Before, firms had to set up a custom connection by hand.",
+      "link": "https://taxdome.atlassian.net/browse/TD-106120",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Job templates can name jobs after their start date",
+      "desc": "Job templates get an opt-in switch to calculate date shortcodes like [LAST_QUARTER] or [CURRENT_YEAR] from the job's start date instead of the day it was created. Before, a job created in August for an October start was named for the wrong quarter. New shortcodes also show the year of the previous or next quarter or month.",
+      "link": "https://taxdome.atlassian.net/browse/TD-102538",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1792770139426919",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Buy onboarding and training straight from Growth Solutions",
+      "desc": "On the Growth Solutions page, the Enhanced onboarding package and Team training now have a Buy button that goes straight to checkout, instead of a Get quote form someone had to follow up on by hand. Custom integration setup is now called Automation & AI setup, and the Annual Success plan is replaced by 6-month and 12-month Account management packages.",
+      "link": "https://taxdome.atlassian.net/browse/TD-102106",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1793264183156409",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "Answer Stripe's requests in TaxDome while payments are under review",
+      "desc": "Firms whose TaxDome Payments application is under review, or that Stripe has asked for more information, can now answer Stripe's request right on the TaxDome Payments settings page instead of being sent to Stripe's site. Last week this became possible for firms that were already fully connected.",
+      "link": "https://taxdome.atlassian.net/browse/TD-102780",
+      "demo": "https://taxdome.slack.com/archives/C58FSFV0B/p1793275638838959?thread_ts=1792149819.821289&cid=C58FSFV0B",
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "A heads-up when 'Mark all as complete' finishes",
+      "desc": "After clicking Mark all as complete on the last-stage banner (Pipeline or Jobs page), firms now get a message when the work is actually done, and if some jobs couldn't be completed it says how many and points to Inbox. Before, all they saw was 'Completion started'.",
+      "link": "https://taxdome.atlassian.net/browse/TD-103766",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "new",
+      "text": "How it works button on every Tax Return Delivery screen",
+      "desc": "Every firm-side Tax Return Delivery screen now has a How it works button that opens the Tax Return Delivery help articles in a new tab. Inside a delivery package it's a small menu that also starts the guided tour.",
+      "link": "https://taxdome.atlassian.net/browse/TD-106064",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "An optional AI plan with a 14-day free trial",
+      "desc": "Firms would opt in to a paid AI plan ($200/month after a 14-day free trial) to keep using TaxDome's AI features such as Tax Return Delivery AI, AI renaming and the Atlas assistant.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2250",
+      "demo": null,
+      "quarter": "Launch was planned for Oct 19, 2026",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Buy client capacity up front at a lower rate",
+      "desc": "Firms would be able to buy the client capacity they expect to need at purchase, at a better rate, instead of paying the top rate month by month as clients become active.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2263",
+      "demo": null,
+      "quarter": "Release set for Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "A meter for how many clients count toward your plan",
+      "desc": "Shows how much of the firm's client allowance is already used and how fast it's filling, so the next bill isn't a surprise and extra capacity can be bought in time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2275",
+      "demo": null,
+      "quarter": "Release set for Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "See exactly what you'll be charged before paying",
+      "desc": "A clear breakdown of what's included and the total at checkout, so a firm's first bill matches what it agreed to.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2262",
+      "demo": null,
+      "quarter": "Release set for Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Monthly extra-client charges on a predictable day",
+      "desc": "Charges for clients above the plan's allowance would arrive on the same day each month with a clear explanation of what they're for.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2368",
+      "demo": null,
+      "quarter": "Release set for Nov 1, 2026 (new firms)",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "See every Tax Return Delivery in one firm-wide view",
+      "desc": "One page showing the status of every Tax Return Delivery across all clients, so managers can spot and step in on the ones at risk instead of checking client by client.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1771",
+      "demo": null,
+      "quarter": "Q4'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Point clients to 'Where's my refund?'",
+      "desc": "Clients would get a link from their Tax Return Delivery to the right tax authority's refund-status page, so they can check on a refund themselves instead of asking the firm.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2023",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Easier to find payment vouchers after a return is done",
+      "desc": "Make it easier for clients to find the payment vouchers in a completed Tax Return Delivery weeks later, when they actually need to make the payment.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2018",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Add local tax authorities to the Tax Summary",
+      "desc": "Firms would be able to add local tax authorities (for example in Pennsylvania or New York City) to a Tax Return Delivery's Tax Summary, instead of picking the wrong authority or writing it in a note.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2008",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "TRD: clearer tax payment options",
+      "desc": "Clearer names for the tax payment method choices in Tax Return Delivery, and a corrected label on the client's side, so firms know which option fits each situation (like paying by voucher) and clients get the right instructions.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1830",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Create a task from any Inbox+ notification",
+      "desc": "Turn any Inbox+ item, including a chat, into a task in one click, for yourself or a teammate, instead of opening the client and creating the task by hand. Today this only works from emails.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2580",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Your own read/unread in Inbox+",
+      "desc": "See which notifications you personally haven't read yet, alongside the existing \"Archive for me,\" instead of archiving everything just to keep track.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2485",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Notifications that tell you more at a glance",
+      "desc": "Every Inbox+ notification would show the event, client, item and person responsible the same way, with room for long names, so you can decide what to do without opening it.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1905",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "More Inbox+ folders: Clients, Mentions, Team, Platform, Issues",
+      "desc": "Notifications sorted into folders by type so you can go straight to what matters, instead of scanning one mixed feed.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1903",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Send client documents to GruntWorx from TaxDome",
+      "desc": "Firms that already use GruntWorx would send a client's documents to it straight from TaxDome, instead of exporting them and uploading them a second time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2508",
+      "demo": null,
+      "quarter": "Pilot Dec 2026; live target Jan 2027",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Send client documents to Instead from TaxDome",
+      "desc": "Firms that use Instead for tax planning would connect it in TaxDome and send a client's documents straight to it, instead of exporting and re-uploading them.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2162",
+      "demo": null,
+      "quarter": "Q4'26",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Moving legacy Stripe firms onto TaxDome Payments",
+      "desc": "Helping firms still collecting through their own older Stripe connection switch to TaxDome Payments, with their clients' saved cards and autopay invoices moved over too.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2074",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Kiosk payments go straight to the card reader assigned to that Kiosk",
+      "desc": "A payment started on an office Kiosk would go directly to the card reader the firm assigned to it, so clients can pay at the Kiosk without anyone stepping in to pick a reader.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2441",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Bill each client at their own prices",
+      "desc": "Set per-client prices for services so proposals and invoices come out right automatically, instead of editing every one by hand or keeping prices in custom fields.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1733",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Checklists from your firm's own templates",
+      "desc": "Firms would be able to save their own checklist templates with items already filled in and apply them to a client, instead of typing out the list item by item every time.",
+      "link": "https://taxdome.atlassian.net/browse/TX-2334",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Checklists for a whole client book from a Drake backup",
+      "desc": "Upload one Drake backup and get personalized document checklists for matched individual clients in one go, instead of building them client by client. Starting as a small limited launch.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1986",
+      "demo": null,
+      "quarter": "Limited launch; quality check early Nov 2026",
+      "reacts": {}
+    },
+    {
+      "cat": "comingSoon",
+      "text": "Roll a checklist forward into the new season",
+      "desc": "Carrying a client's prior-season checklist into the new season in one action instead of rebuilding it from zero every year.",
+      "link": "https://taxdome.atlassian.net/browse/TX-1778",
+      "demo": null,
+      "quarter": "Q2'26",
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: a signature could go missing when two signers finished at the same moment",
+      "desc": "If a second person clicked Finish while the first signer's signature was still saving, the document in the portal and the download could show only the first signature, even though the history said both had signed. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105034",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: some clients and firms couldn't add a payment method",
+      "desc": "If the client's saved payment profile no longer existed on the firm's Stripe account (for example after the firm reconnected a different Stripe account), adding a card just failed with no explanation, both for the client and for staff adding it on their behalf. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-97830",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: some firms got stuck setting up TaxDome Payments",
+      "desc": "TaxDome still pointed some firms to Stripe accounts that no longer existed, which left them stuck in payments setup or in the switch to the new Stripe account type. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105215",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: no limit on guesses for authenticator app codes",
+      "desc": "There was no per-account cap on how many times someone could try a two-factor authenticator code, so a code could in theory be guessed. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-104203",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: bulk-adding clients to a pipeline failed if the stage applies a folder template",
+      "desc": "Since Oct 26, adding several clients at once to a pipeline stage with an 'Apply folder template' automation created no jobs at all. Fixed. Until now the workaround was adding clients one at a time.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105885",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: New job could silently reuse an earlier bulk selection",
+      "desc": "After using bulk Add job on the Accounts page, clicking New job on the Jobs page (without reloading) reopened that old selection, sometimes over 1,000 accounts, with the Accounts field hidden, so one click could create jobs for all of them. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105679",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: every signer on a proposal saw 'Accept & pay'",
+      "desc": "With two signers, like a married couple, both saw 'Accept & pay' with the deposit amount, so many assumed they'd be charged twice. Now only the last signer, whose signature actually triggers the payment, sees it.",
+      "link": "https://taxdome.atlassian.net/browse/TD-105623",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: Tax Return Delivery printed blurry",
+      "desc": "Printing from inside a Tax Return Delivery gave blurry pages, while the same document printed clearly from Document archive. Fixed.",
+      "link": "https://taxdome.atlassian.net/browse/TD-104980",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    },
+    {
+      "cat": "bug",
+      "text": "Fixed: the 'changes requested' email went to every contact",
+      "desc": "When a client clicked Request changes on a Tax Return Delivery with approval, the confirmation email went to every contact on the account. Now only the person who asked for changes gets it.",
+      "link": "https://taxdome.atlassian.net/browse/TD-104991",
+      "demo": null,
+      "quarter": null,
+      "reacts": {}
+    }
+  ],
+  "poll": [
+    {
+      "label": "Tax Return Delivery templates",
+      "votes": 0
+    },
+    {
+      "label": "Linking email threads to Jobs, now for everyone",
+      "votes": 0
+    },
+    {
+      "label": "One-click connect to ChatGPT or Claude",
+      "votes": 0
+    }
+  ],
+  "mystery": "The new job-name switch is opt-in on purpose: TaxDome's research found that changing the default would rename about 49,000 jobs a year, while firms only fix around 700 of them by hand."
+}

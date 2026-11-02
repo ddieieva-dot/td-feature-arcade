@@ -1,6 +1,13 @@
 {
-  "current": "data-2026-10-19.json",
+  "current": "data-2026-10-26.json",
   "archive": [
+    {
+      "id": "2026-10-19",
+      "file": "data-2026-10-19.json",
+      "range": "Oct 19–26, 2026",
+      "summary": "Job health indicators, grouping jobs by pipeline or stage, Affirm and Klarna pay-over-time, and Tax Return Delivery in the new Desktop app all reached everyone, while auto-placed TRD signature fields and proposal expiration dates entered Beta — alongside 12 bug fixes including security gaps in Sign in with Apple and Google and SMS threads open to employees not assigned to that client.",
+      "tag": "24 shipped"
+    },
     {
       "id": "2026-10-12",
       "file": "data-2026-10-12.json",
